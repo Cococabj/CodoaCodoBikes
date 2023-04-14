@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codo a Codo Bikes</title>
     <style>
-      header {
-                background-color: red!important;
-            }
-    .grid-container {
-        display: inline-grid;
-        grid-template-columns: auto auto auto auto;
-        column-gap: 50px;
-        background-color: grey;
-        padding: 10px;
-    }
-    [class*="col-"] {
-        float: left;
-        padding: 15px;
-}
+        header {
+            background-color: red !important;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: grey;
+            height: 350px;
+            width: 350px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            padding: 1%;
+            border-color: black;
+            border-radius: 5%;
+            position: relative;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
 
         .col-1 {width: 8.33%;}
         .col-2 {width: 16.66%;}
@@ -34,78 +57,103 @@
         .col-11 {width: 91.66%;}
         .col-12 {width: 100%;}
 
-        
+        .sucursales{
+            /*No se fijen en los colores, lo dejo de ejemplo por si les sirve relleno de colores y borde de colores*/
+            margin: 5px;
+            background-color: grey;
+        }
+        .sucursales h2{
+            text-align: center;
+            -webkit-text-fill-color: aqua;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+        }
+        .sucursales p{
+            text-align: left;
+            -webkit-text-fill-color: red;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
-        <div>
-            <h1>PRUEBA</h1>
+        <div id="inicio">
             <h1>Codo a Codo Bikes</h1>
             <p>codoacodobikes.com.ar</p>
-
         </div>
 
         <nav>
-            <a  href="">Inicio</a>
-            <a  href="">Alquila Ahora</a>
-            <a  href="">Servicios</a>
-            <a  href="">Precios</a>
-            <a  href="">Nosotros</a>
-            <a  href="#contacto">Contacto</a>
-         </nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#alquila">Alquila Ahora</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#precios">Precios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#sucursales">Sucursales</a>
+        </nav>
     </header>
     <main>
-
-    <div id="Contacto">
-        <form action="./show-data.html" target="_blank">
-            <label for="Fecha">Fecha</label>
-            <input type="date" name="Fecha" id="Fecha">
-            <br>
-            <label for="Cliente">Cliente</label>
-            <input type="text" name="Cliente" id="Cliente">
-            <br>
-            <label for="Direccion">Direccion</label>
-            <input type="text" name="Direccion" id="Direccion">
-            <br>
-            <label for="Cantidad">Cantidad</label>
-            <input type="number" name="Cantidad" id="Cantidad">
-            <br>
-            <label for="Sabor">Sabor</label>
-            <input type="text" name="Sabor" id="Sabor">
-            <br>
-            <label for="Telefono">Telefono</label>
-            <input type="tel" name="Telefono" id="Telefono">
-            <br>
-            <br>
-            <label for="Mail">Ingresar E-Mail</label>
-            <input type="text" name="Mail" id="Mail">
-            <br>
-            <input type="submit" value="Enviar">
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="grid-container">
         <div>
-            <h2>SUCURSALES</h2>
-            <br>
-            <div class="col-6">
-                <iframe id="mapas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18575.13721769112!2d-58.4260614468612!3d-34.612976233952395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5c49c03e7%3A0x1069a127ea37daca!2sBushido%20Bike%20bicicleter%C3%ADa%20%2F%20bicicleter%C3%ADas!5e0!3m2!1sen!2sar!4v1681424432284!5m2!1sen!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-6">
-                <iframe id="mapas" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3905.4595116495275!2d-58.38329968878382!3d-34.6019639370783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbicicleteria!5e0!3m2!1sen!2sar!4v1681424250497!5m2!1sen!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div id="Contacto">
+            <form action="./show-data.html" target="_blank">
+                <label for="Fecha">Fecha</label>
+                <input type="date" name="Fecha" id="Fecha">
+                <br>
+                <label for="Cliente">Cliente</label>
+                <input type="text" name="Cliente" id="Cliente">
+                <br>
+                <label for="Direccion">Direccion</label>
+                <input type="text" name="Direccion" id="Direccion">
+                <br>
+                <label for="Cantidad">Cantidad</label>
+                <input type="number" name="Cantidad" id="Cantidad">
+                <br>
+                <label for="Sabor">Sabor</label>
+                <input type="text" name="Sabor" id="Sabor">
+                <br>
+                <label for="Telefono">Telefono</label>
+                <input type="tel" name="Telefono" id="Telefono">
+                <br>
+                <br>
+                <label for="Mail">Ingresar E-Mail</label>
+                <input type="text" name="Mail" id="Mail">
+                <br>
+                <input type="submit" value="Enviar">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="sucursales">
+            <div>
+                <h2 id="sucursales">SUCURSALES</h2>
+                <p>Podes acercarte a nuestras sucursales en:</p>
+                
+                <div class="flex-container map-responsive">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18575.13721769112!2d-58.4260614468612!3d-34.612976233952395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5c49c03e7%3A0x1069a127ea37daca!2sBushido%20Bike%20bicicleter%C3%ADa%20%2F%20bicicleter%C3%ADas!5e0!3m2!1sen!2sar!4v1681424432284!5m2!1sen!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="flex-container map-responsive">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3905.4595116495275!2d-58.38329968878382!3d-34.6019639370783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbicicleteria!5e0!3m2!1sen!2sar!4v1681424250497!5m2!1sen!2sar"
+                        width="600" height="450"style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
-    </div>
-
     </main>
     <footer>
 
 
 
     </footer>
-    
+
 </body>
+
 </html>
