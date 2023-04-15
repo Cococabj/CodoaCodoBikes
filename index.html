@@ -16,34 +16,40 @@
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: stretch;
             background-color: grey;
-            height: 350px;
-            width: 350px;
+            height: 1100px;
+            width: 100%;
             padding: 10px;
             margin: 10px;
+        
         }
 
-        .map-responsive {
-            overflow: hidden;
-            padding: 1%;
-            border-color: black;
-            border-radius: 5%;
-            position: relative;
-        }
-
-        .map-responsive iframe {
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
-
+        
+        /* For mobile phones: */
         [class*="col-"] {
+            width: 100%;
             float: left;
             padding: 15px;
         }
 
+        @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+        /* For desktop: */
         .col-1 {width: 8.33%;}
         .col-2 {width: 16.66%;}
         .col-3 {width: 25%;}
@@ -56,9 +62,10 @@
         .col-10 {width: 83.33%;}
         .col-11 {width: 91.66%;}
         .col-12 {width: 100%;}
+        }
 
+        /*No se fijen en los colores, lo dejo por si sirve de ejemplo. Relleno de colores y borde de colores*/
         .sucursales{
-            /*No se fijen en los colores, lo dejo de ejemplo por si les sirve relleno de colores y borde de colores*/
             margin: 5px;
             background-color: grey;
         }
@@ -73,6 +80,12 @@
             -webkit-text-fill-color: red;
             -webkit-text-stroke-color: black;
             -webkit-text-stroke-width: 1px;
+        }
+        .sucursales iframe{
+            padding: 1%;
+            border: 2px solid black;
+            border-radius: 5%;
+            position: static;
         }
     </style>
 </head>
@@ -128,21 +141,24 @@
         <br>
         <br>
         <br>
-        <div class="sucursales">
+        <div class="sucursales flex-container">
             <div>
                 <h2 id="sucursales">SUCURSALES</h2>
                 <p>Podes acercarte a nuestras sucursales en:</p>
-                
-                <div class="flex-container map-responsive">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum autem voluptate. Repellendus explicabo quidem omnis neque animi distinctio ab temporibus est, sint laudantium odio nam totam quis, voluptates aliquid.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum autem voluptate. Repellendus explicabo quidem omnis neque animi distinctio ab temporibus est, sint laudantium odio nam totam quis, voluptates aliquid.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum autem voluptate. Repellendus explicabo quidem omnis neque animi distinctio ab temporibus est, sint laudantium odio nam totam quis, voluptates aliquid.</p>
+
+                <div class="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18575.13721769112!2d-58.4260614468612!3d-34.612976233952395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5c49c03e7%3A0x1069a127ea37daca!2sBushido%20Bike%20bicicleter%C3%ADa%20%2F%20bicicleter%C3%ADas!5e0!3m2!1sen!2sar!4v1681424432284!5m2!1sen!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600px" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="flex-container map-responsive">
+                <div class="map">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3905.4595116495275!2d-58.38329968878382!3d-34.6019639370783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbicicleteria!5e0!3m2!1sen!2sar!4v1681424250497!5m2!1sen!2sar"
-                        width="600" height="450"style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600px" height="450px"style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
