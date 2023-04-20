@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codo a Codo Bikes</title>
+    <style>
+        header {
+            background-color: red !important;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            align-items: stretch;
+            
+            width: 100%;
+        }
+
+        /* columnas responsivas
+        
+        For mobile phones:
+        [class*="col-"] {
+            width: 100%;
+            float: left;
+            padding: 15px;
+        }
+
+        @media only screen and (min-width: 600px) {
+         For tablets: 
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+         For desktop: 
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        }
+        */
+
+
+        /*No se fijen en los colores, lo dejo por si sirve de ejemplo. Relleno de colores y borde de colores*/
+        .sucursales {
+            margin: auto;
+            padding: 10px;
+            /* 10px padding */
+            border: 2px solid red;
+            background-clip: content-box;
+            /* <---- */
+            box-shadow: inset 0 0 0 10px lightGreen;
+            /* <-- 10px spread radius */
+            background-color: grey;
+        }
+
+        .sucursales h2 {
+            background-color: blue;
+            text-align: center;
+            -webkit-text-fill-color: aqua;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+        }
+
+        .sucursales p {
+            background-color: beige !important;
+            margin-bottom: 1px;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;
+            -webkit-text-fill-color: red;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+        }
+
+        .map-container {
+            flex: auto;
+            background-color: blueviolet;
+            position: relative;
+            padding-bottom: 30%;
+            margin-bottom: 1%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .map iframe {
+            left: 0;
+            bottom: 0;
+            margin-left: 10px;
+            height: 80%;
+            width: 100%;
+            position: absolute;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="inicio">
+            <h1>Codo a Codo Bikes</h1>
+            <p>codoacodobikes.com.ar</p>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#alquila">Alquila Ahora</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#precios">Precios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#sucursales">Sucursales</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+
+        </div>
+        <div id="Contacto">
+            <form action="./show-data.html" target="_blank">
+                <br>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" placeholder="Nombre" required minlength="5" maxlength="20" name="Nombre" id="Nombre">
+                <br>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" placeholder="Apellido" required minlength="5" maxlength="20" name="Apellido"
+                    id="Apellido">
+                <br>
+                <label for="Documento">Documento:</label>
+                <input type="text" placeholder="12345678" required minlength="7" maxlength="8" name="Documento"
+                    id="Documento">
+                <br>
+                <label for="Telefono">Telefono</label>
+                <input type="tel" placeholder="Telefono" required name="Telefono" id="Telefono">
+                <br>
+                <label for="Pago">Medio de pago</label>
+                <input type="text" list="Pago" name="Pago" required>
+                <datalist id="Pago">
+                    <option value="Tarjeta de credito">
+                    <option value="Tarjeta de debito">
+                    <option value="Transferencia">
+                    <option value="Efectivo">
+                </datalist>
+                <br>
+                <label>Punto de retiro</label>
+                <input type="text" list="Ubicacion" name="Ubicacion" required>
+                <datalist id="Ubicacion">
+                    <option value="Microcentro">
+                    <option value="Caballito">
+                    <option value="Palermo">
+                    <option value="Villa Luro">
+                </datalist>
+                <br>
+                <label for="Fecha">Fecha y hora de inicio del alquiler</label>
+                <input type="date" required min="2022-01-01" max="2024-12-31" name="Fecha" id="Fecha">
+                <label for="Hora"></label>
+                <input type="time" required min="08:00" max="22:00" name="Hora" id="Hora">
+                <br>
+                <label for="Mail">Ingresar E-Mail:</label>
+                <input type="text" placeholder="ejemplo@mail.com" required minlength="5" maxlength="50" name="Mail"
+                    id="Mail">
+                <br>
+                <label for="Comentarios">Comentarios:</label>
+                <br>
+                <textarea placeholder="Comentarios o sugerencias (hasta 1000 caracteres)" minlength="10"
+                    maxlength="1000" name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="sucursales">
+            <div id="titulo-sucursales">
+                <h2 id="sucursales">SUCURSALES</h2>
+                <p>Podes acercarte a nuestras sucursales en:</p>
+            </div>
+            <div class="flex-container">
+                <div class="map-container">
+
+                    <div>
+                        <p>Caballito</p>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18575.13721769112!2d-58.4260614468612!3d-34.612976233952395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5c49c03e7%3A0x1069a127ea37daca!2sBushido%20Bike%20bicicleter%C3%ADa%20%2F%20bicicleter%C3%ADas!5e0!3m2!1sen!2sar!4v1681424432284!5m2!1sen!2sar"
+                            width="600px" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div>
+                        <p>Microcentro</p>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.031278225509!2d-58.39187692454854!3d-34.603370572954375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbc0cd6eb63d%3A0xd6889ba4ee2f4efb!2sBicicleter%C3%ADa%20danmic!5e0!3m2!1sen!2sar!4v1681725798070!5m2!1sen!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div>
+                        <p>Palermo</p>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0100177412723!2d-58.43101742454981!3d-34.57861307296324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5312cac6339%3A0x950e342308df9d03!2sAlchemist.bikes!5e0!3m2!1sen!2sar!4v1681725901787!5m2!1sen!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div>
+                        <p>Villa Luro</p>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.4212410047408!2d-58.50276407034913!3d-34.635911670715274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b71de8b551%3A0x43f6d45ffbc3e16b!2sRODADOS%20EMILIANO%20Bicycle%20Shop!5e0!3m2!1sen!2sar!4v1681726018606!5m2!1sen!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h2>Hola soy un footer 3</h2>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+    </footer>
+
+</body>
+
+</html>
