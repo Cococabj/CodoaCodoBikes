@@ -30,10 +30,10 @@ a{
 
 }
 li{
-    padding: 0px 22.5px 5.625px;
+    padding: 0px 22.5px 5.625px; 
 }
 .imagenabout{
-    background-image:url("/IMG/about1.jpg");
+    background-image:url("./img/about1.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -48,6 +48,11 @@ li{
     color: white;
 
 }
+.pyme{
+    background-color: black;
+    height: 500px;
+    padding: 35px 64px 0px;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
@@ -55,3 +60,5 @@ body{
 footer{
     color: black;
 }
+/*  what problem your offering solves  | Cite examples of whom you’ve served |
+Explain what you’re offering them |Establish a mission statement resolver problema de movilidad*/ 
