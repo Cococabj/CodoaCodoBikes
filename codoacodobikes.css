@@ -2,16 +2,6 @@ header {
     background-color: red !important;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: stretch;
-    
-    width: 100%;
-}
-
 /* columnas responsivas
 
 For mobile phones:
@@ -85,6 +75,14 @@ For mobile phones:
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
 }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: stretch;
+    width: 100%;
+}
 
 .map-container {
     flex: auto;
@@ -96,10 +94,19 @@ For mobile phones:
     overflow: hidden;
 }
 
+.ubicacion {
+    
+    justify-content: center;
+    width: 100%;
+    background-color: red !important;
+}
+
 .map iframe {
     left: 0;
+    right: 0;
     bottom: 0;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     height: 80%;
     width: 100%;
     position: absolute;
