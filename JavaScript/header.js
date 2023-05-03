@@ -1,6 +1,6 @@
 document.write(`
 
-<h2>Este es un header sincronizado en header.JS</h2>
+<h2>Este es un header sincronizado en header.JS hola prueba</h2>
 <div  id="inicio" style="background-color: #F8C303;">
 
     <a href="#inicio"><img src="./img/bicicleta.png" alt="Inicio" width="150"></a>
