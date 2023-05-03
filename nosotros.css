@@ -1,6 +1,9 @@
-/*p{
+p{
     color: white;
+    font-size: 25px;
+
 }
+/*
 h1{
     color:white;
     font-size: 35px;
@@ -51,7 +54,11 @@ li{
 .pyme{
     background-color: black;
     height: 500px;
-    padding: 35px 64px 0px;
+    padding: 75px 54px 0px;
+    display: flex;
+    justify-content: center;
+    word-wrap: break-word;
+    color: white;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -60,5 +67,40 @@ body{
 footer{
     color: black;
 }
+.imagenabout2{
+    background-image: url("./img/about1.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    position: relative;
+    height: 700px;
+    display: flex;
+    text-align: center;
+
+}
+.textoabout2{
+    position: absolute; 
+    top: 80px;
+    left: 300px;
+    color: white;
+
+}
+.parrafoencima{
+    position: absolute;
+    top: 210px;
+    left: 100px;
+    color: white;
+    font-size: 28px;
+    word-wrap: break-word;
+    width: 555px;
+}
+.parrafovideo{
+    color: white;
+    position: absolute;
+    word-wrap: break-word;
+    width: 50px;
+}
+
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
-Explain what you’re offering them |Establish a mission statement resolver problema de movilidad*/ 
+Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
+width560 y height 315 | una animacion de un mono o bici que arrastre a las fotos de nosotros 
+y que despliegue un breve resumen */ 
