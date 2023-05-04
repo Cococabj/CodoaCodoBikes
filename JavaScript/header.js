@@ -1,6 +1,6 @@
 document.write(`
 
-<h2>Este es un header sincronizado en header.JS hola prueba</h2>
+<h2>Este es un header sincronizado en header.JS hola</h2>
 <div  id="inicio" style="background-color: #F8C303;">
 
     <a href="#inicio"><img src="./img/bicicleta.png" alt="Inicio" width="150"></a>
@@ -13,11 +13,11 @@ document.write(`
     <div>
         <nav id="pruebanav">
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="#alquila">Alquila Ahora</a></li>
-            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="./alquila.html">Alquila Ahora</a></li>
+            <li><a href="./recorridos.html">Recorridos</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#sucursales">Sucursales</a></li>
+            <li><a href="./index.html#contacto">Contacto</a></li>
+            <li><a href="./index.html#sucursales">Sucursales</a></li>
         </nav>
     </div>
 </div>
