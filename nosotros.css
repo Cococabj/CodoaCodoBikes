@@ -53,7 +53,7 @@ li{
 }
 .pyme{
     background-color: black;
-    height: 500px;
+    height: auto;
     padding: 75px 54px 0px;
     display: flex;
     justify-content: center;
