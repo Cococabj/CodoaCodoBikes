@@ -149,11 +149,21 @@ a{
     justify-content: center;
     background-color: black;
     color: white;
+    text-align: center;
     
     list-style:none
 
 
 }
+@media screen and (max-width: 600px) {
+    #pruebanav {
+      
+      width: 100%; 
+      display: inline-block;
+       
+     
+    }
+  }
 .pyme{
     background-color: black;
     height: 500px;
@@ -193,6 +203,7 @@ footer{
     height: 700px;
     display: flex;
     text-align: center;
+    flex-flow: row wrap;
 
 }
 .textoabout2{
@@ -203,13 +214,13 @@ footer{
 
 }
 .parrafoencima{
-    position: absolute;
-    top: 210px;
-    left: 100px;
+    position: relative; /*iba absolute*/
+    /*top: 210px;
+    left: 100px;*/
     color: white;
     font-size: 28px;
     word-wrap: break-word;
-    width: 555px;
+    
 }
 .parrafovideo{
     color: white;
@@ -217,7 +228,23 @@ footer{
     word-wrap: break-word;
     width: 50px;
 }
+.boxtextoabout{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    height: 25%;
+    padding: 2%;
+    width: auto;
+    flex-flow: row wrap;
 
+}
+.tituloabout{
+    color:white;
+    text-align: center;
+
+}
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
 Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
 width560 y height 315 | una animacion de un mono o bici que arrastre a las fotos de nosotros 
