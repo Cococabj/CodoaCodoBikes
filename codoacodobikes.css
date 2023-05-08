@@ -155,19 +155,54 @@ a{
 
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #pruebanav {
       
       width: 100%; 
       display: inline-block;
-       
+    background-color: black;
      
     }
   }
+@media screen and (min-width: 800px) {
+    #pruebanav {
+      
+      width: 100%; 
+      display: inline-flex;
+    background-color: black;
+     
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    #pruebanav {
+      
+      width: 100%; 
+      display: inline-flex;
+    background-color: black;
+     
+    }
+  }
+
 .pyme{
     background-color: black;
-    height: 500px;
-    padding: 35px 64px 0px;
+    height: auto;
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 75% ;
+    display: flex;
+}
+.parrafovideo{
+    color: white;
+    position: relative;
+    text-align: left;
+    word-wrap: break-word;
+    width: auto;
+    padding: 2%;
+    flex: 66%;
+}
+.video{
+    padding: 2%;
+    flex: 34%;
 }
 li{
     padding: 0px 22.5px 5.625px;
@@ -222,27 +257,21 @@ footer{
     word-wrap: break-word;
     
 }
-.parrafovideo{
-    color: white;
-    position: absolute;
-    word-wrap: break-word;
-    width: 50px;
-}
 .boxtextoabout{
     background-color: blue;
+    opacity: 0.3;
     display: flex;
     justify-content: center;
     position: relative;
-    left: 10%;
-    height: 25%;
+    margin: 5%;
     padding: 2%;
-    width: auto;
+    width: 80%;
     flex-flow: row wrap;
 
 }
-.tituloabout{
-    color:white;
-    text-align: center;
+.textabout{
+    color:black;
+    text-align: left;
 
 }
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
