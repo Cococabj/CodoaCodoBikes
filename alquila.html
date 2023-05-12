@@ -22,12 +22,30 @@
         <script src="./JavaScript/header.js"></script>
     </header>
     <main>
-
+        <div>
+            <h1 style="text-align: center;">Prueba de APIs</h1>
+            <div id="app">
+                <h4>Bicicletas para alquilar</h1>
+                <h2>Prueba de APIs</h2>
+                <div v-for="elemento in bicycles">
+                    <h6 id="">{{elemento.type}}</h6>
+                    <hr>
+                    <h6>{{elemento.total_length_cm}}</h6>
+                    <hr>
+                    <h6>{{elemento.index}}</h6>
+                    <hr>
+                    <img :src="elemento.image" :alt="elemento.type">
+                </div>
+                <p>{{bicycles}}</p>
+            </div>
+        </div>
     </main>
     <footer>
         <script src="./JavaScript/footer.js"></script>
-        
     </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./JavaScript/Bikes.js"></script>
 
 </body>
 
