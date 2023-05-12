@@ -165,7 +165,7 @@ a{
     }
     .pyme{
         width: 100%;
-        display: inline-block;
+        display: inline-flex;       
 
     }
   }
@@ -192,18 +192,19 @@ a{
 .pyme{
     background-color: black;
     height: auto;
-    width: auto;
+    width: 100%;
     padding: 1% 3%;
-    display: flex;
+    display: inline-flex;
     box-sizing: border-box;
+    break-inside: auto;
 }
 .parrafovideo{
-    color: white;
+    color: coral;
     position: relative;
-    text-align: left;
-    /*word-wrap: break-word;*/
+    text-align: center;
+    word-wrap: break-word;*/
     display: flex;
-    width: auto;
+    width: 100%;
     padding: 2%;
     font-size: medium;
     /*flex: 66%;*/
@@ -214,6 +215,14 @@ a{
     flex: 34%;
     display: flex;
     column-count: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100;
+    border: none;
 }
 li{
     padding: 0px 22.5px 5.625px;
@@ -293,4 +302,5 @@ footer{
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
 Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
 width560 y height 315 | una animacion de un mono o bici que arrastre a las fotos de nosotros 
-y que despliegue un breve resumen */ 
+y que despliegue un breve resumen | Estimulamos la movilidad sustentable en la ciudad desde 1996, brindando soluciones ecologicas
+                        para los turistas, y recidentes de Buenos Aires*/ 
