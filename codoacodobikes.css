@@ -202,7 +202,7 @@ a{
     color: coral;
     position: relative;
     text-align: center;
-    word-wrap: break-word;*/
+    word-wrap: break-word;
     display: flex;
     width: 100%;
     padding: 2%;
