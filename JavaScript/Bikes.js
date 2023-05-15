@@ -8,7 +8,7 @@ createApp({
       }
     },
     methods: {
-        fetchData(url) {  // necesite un async y await porque seguia de largo y no me cargaba el array recipes ni las listas desplegables
+        fetchData(url) {  // lee datos de la API de Bicis propia
          fetch(url) 
            .then(response => response.json()) 
            .then(data => {
@@ -21,4 +21,4 @@ createApp({
      created() {
      this.fetchData(this.url)                                                  //   
      },
-  }).mount('#app')
+  }).mount('#app-bici')
