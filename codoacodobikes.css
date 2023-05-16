@@ -240,7 +240,7 @@ li{
     position: absolute;
     top: 50%;
     left: 20%;
-    color: white;
+    color: #7286D3;
 
 }
 body{
@@ -279,8 +279,8 @@ footer{
     
 }
 .boxtextoabout{
-    background-color: blue;
-    background: rgba(255, 122, 89, .5); /*opacity: 0.3;*/
+    /*background-color: blue;*/
+    background: rgba(255, 231, 204, 0.3); 
     display: block;
     justify-content: center;
     position: relative;
@@ -291,10 +291,12 @@ footer{
     width: 20%;
     flex-flow: row wrap;
     height: 55%;
+    border-radius: 15px;
+
 
 }
 .textabout{
-    color:black;
+    color:#13005A;
     text-align: center;
 }
 
