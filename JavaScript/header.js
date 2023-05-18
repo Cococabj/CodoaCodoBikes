@@ -18,15 +18,15 @@ document.write(`
             <li><a href="./alquila.html">Alquila Ahora</a></li>
             <li><a href="./recorridos.html">Servicios</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#sucursales">Sucursales</a></li>
+            <li><a href="./index.html#contacto">Contacto</a></li>
+            <li><a href="./index.html#sucursales">Sucursales</a></li>
         </ul>
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./alquila.html">Alquila Ahora</a></li>
         <li><a href="./recorridos.html">Servicios</a></li>
         <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#sucursales">Sucursales</a></li>
+        <li><a href="./index.html#contacto">Contacto</a></li>
+        <li><a href="./index.html#sucursales">Sucursales</a></li>
     </nav>
 </div>
 
