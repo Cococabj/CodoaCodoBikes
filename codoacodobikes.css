@@ -113,6 +113,10 @@ For mobile phones:
     border-radius: 10%;
 }
 
+/*<---CSS para el Footer--->*/
+.whats-app { text-align: right;
+}
+
 p{
     color: white;
     font-size: 25px;
@@ -357,7 +361,7 @@ ul{
     filter: brightness(110%);
   }
 
-/*<-----------CSS para Alquila.html---------->   */ 
+/*<-----------CSS para Alquila.html---------->*/ 
 
 
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
