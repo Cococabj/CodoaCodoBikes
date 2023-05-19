@@ -1,7 +1,3 @@
-header {
-    background-color: red !important;
-}
-
 /* columnas responsivas
 
 For mobile phones:
@@ -44,36 +40,35 @@ For mobile phones:
 */
 
 
-/*No se fijen en los colores, lo dejo por si sirve de ejemplo. Relleno de colores y borde de colores*/
+/*<---Inicio CSS para sucursales--->*/
 .sucursales {
-    margin: auto;
-    padding: 10px;
-    /* 10px padding */
-    border: 2px solid red;
-    background-clip: content-box;
-    /* <---- */
-    box-shadow: inset 0 0 0 10px lightGreen;
-    /* <-- 10px spread radius */
-    background-color: grey;
+    background-color: black;
+    padding: 2%;
+    color: white;
 }
 
-.sucursales h2 {
-    background-color: blue;
+.titulo-sucursales {
+    background-color: #F8C303;
     text-align: center;
-    -webkit-text-fill-color: aqua;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    margin: 2px !important;
+    color: black;
 }
-
+#titulo-sucursales {
+    background-color: #F8C303;
+    text-align: center;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    color: black;
+}
 .sucursales p {
-    background-color: beige !important;
-    margin-bottom: 1px;
+    background-color: #F8C303 ;
+    margin-top: 2px;
+    margin-bottom: 2px;
     margin-left: 5px;
     margin-right: 5px;
     text-align: center;
-    -webkit-text-fill-color: red;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    color: black;
+    font-weight: bold;
 }
 .flex-container {
     display: flex;
@@ -86,19 +81,18 @@ For mobile phones:
 
 .map-container {
     flex: auto;
-    background: #cd2afa80; /*opacity: 0.3;*/
+    background: #F8C303; /*opacity: 0.3;*/
     position: relative;
-    padding-bottom: 30%;
-    margin-bottom: 1%;
+    padding-bottom: 27%;
+
     height: 0;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .ubicacion {
     
     justify-content: center;
     width: 100%;
-    background-color: red !important;
 }
 
 .map iframe {
@@ -112,10 +106,35 @@ For mobile phones:
     position: absolute;
     border-radius: 10%;
 }
+/*<---Fin CSS para sucursales--->*/
 
-/*<---CSS para el Footer--->*/
+/*<---Inicio CSS para el Footer--->*/
 .whats-app { text-align: right;
 }
+.footer-container {
+    font-weight: bold;
+}
+.footer-container a{
+    padding-left: 1% ;
+}
+.footer-container p {
+    display:block ;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.redes p{
+    font-size: 60%;
+}
+.desarrollo p{
+    font-size: 60%;
+}
+.creacion p{    
+    font-size: 40%;
+}
+
+/*<---Fin CSS para el Footer--->*/
 
 p{
     color: white;
@@ -139,7 +158,6 @@ h1{
     display: flex;
     justify-content: center;
     background-color: #F8C303;
-    
 }
 
 a{
@@ -154,9 +172,7 @@ a{
     background-color: black;
     color: white;
     text-align: center;
-    
     list-style:none
-
 
 }
 @media screen and (max-width: 800px) {
