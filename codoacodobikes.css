@@ -48,7 +48,7 @@ For mobile phones:
 }
 
 .titulo-sucursales {
-    background-color: #F8C303;
+    background-color: #f8c303;
     text-align: center;
     margin: 2px !important;
     color: black;
@@ -176,31 +176,28 @@ a{
 
 }
 @media screen and (max-width: 800px) {
-    #pruebanav {
+    #pruebanav{
       
       width: 100%; 
       display: inline-block;
     background-color: black;
      
     }
-    .pyme{
-        width: 100%;
-        display: inline-flex;       
-
-    }
   }
 @media screen and (min-width: 800px) {
-    #pruebanav {
+    #pruebanav{
       
       width: 100%; 
       display: inline-flex;
     background-color: black;
      
     }
+   
+    
   }
   @media screen and (min-width: 1200px) {
   
-    #pruebanav {
+    #pruebanav{
       
       width: 100%; 
       display: inline-flex;
@@ -216,14 +213,19 @@ a{
     padding: 1% 3%;
     display: inline-flex;
     box-sizing: border-box;
-    break-inside: auto;
+    @media (max-width: 767px) {
+        width: 100%;
+        display: inline-block;
+
+    }
+    
 }
 .parrafovideo{
     color: coral;
     position: relative;
     text-align: center;
     word-wrap: break-word;
-    display: flex;
+    display: inline-block;
     width: 100%;
     padding: 2%;
     font-size: medium;
@@ -243,21 +245,18 @@ a{
     width: 100%;
     height: 100;
     border: none;
+    @media (max-width: 757px){
+        justify-content:center;
+        position: center;
+    }
 }
 li{
     padding: 0px 22.5px 5.625px;
 }
-.imagenabout{
-    background-image:url("./img/about1.jpg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    position: relative;
-    height: 700px;
-}
+
 .textoabout{
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 20%;
     color: #7286D3;
@@ -280,10 +279,15 @@ footer{
     width: 100%;
     text-align: center;
     flex-flow: row wrap;
+    @media (max-width: 1035px) {
+        width: 100%;
+        display:inline-block;
+        justify-content: center;
+    }
 
 }
 .textoabout2{
-    position: absolute; 
+    position: relative; 
     top: 80px;
     left: 300px;
     color: white;
@@ -309,16 +313,44 @@ footer{
     margin: 5%;
     padding: 2%;
     width: 20%;
-    flex-flow: row wrap;
+    /*flex-flow: row wrap;*/
     height: 55%;
     border-radius: 15px;
+    word-wrap: break-word;
+    @media (max-width: 1035px) {
+        width: auto;
+        height: auto;
+        top: 20%;
 
-
-}
+        
+    }
+  
 .textabout{
-    color:#13005A;
+   /* color:#13005A;*/
+   color:  #f8c303;
     text-align: center;
 }
+/* seccion 2 about us */
+.creadores{
+    background-color: blue;
+    border-radius: 50%;
+    color: coral;
+    display: flex;
+    align-items: center;
+
+    
+}
+.seccioncreadores{
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+/* seccion 2 about us */
 
 ul{
     display: none;
@@ -376,6 +408,7 @@ ul{
   li:hover {
     filter: brightness(110%);
   }
+
 
 /*<-----------CSS para Alquila.html---------->*/ 
 
