@@ -385,166 +385,181 @@ footer {
 
 /* seccion 2 about us */
 .creadores {
-    background-color: blue;
     border-radius: 50%;
     color: coral;
-    display: flex;
-    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    word-wrap: break-word;
+    display: inline-block;
 
 
+}
+
+.fotoscreadores {
+    width: 100px;
+    height: 100px;
 }
 
 .seccioncreadores {
     box-sizing: border-box;
     height: auto;
-    width: auto;
+    width: 100%;
     background-color: black;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
 
-}
+        width: 100%;
+        display: inline-block;
+        background-color: black;
+        align-items: center;
+    }
 
-/* seccion 2 about us */
+    /* seccion 2 about us */
 
-.sandwich ul {
-    display: none;
-}
+    .sandwich ul {
+        display: none;
+    }
 
-.sandwich input:checked~ul {
-    display: block;
-}
+    .sandwich input:checked~ul {
+        display: block;
+    }
 
-.sandwich input {
-    display: none;
-}
+    .sandwich input {
+        display: none;
+    }
 
-.sandwich label {
-    box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: left;
-    user-select: none;
+    .sandwich label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: left;
+        user-select: none;
 
-}
+    }
 
-/* Estilo del boton cuando se pasa el mouse por encima*/
-.sandwich label:hover {
-    background: black;
-}
+    /* Estilo del boton cuando se pasa el mouse por encima*/
+    .sandwich label:hover {
+        background: black;
+    }
 
-/* Estilo del boton cuando el menú está expandido*/
-.sandwich input:checked~label {
-    background: black;
-}
+    /* Estilo del boton cuando el menú está expandido*/
+    .sandwich input:checked~label {
+        background: black;
+    }
 
-ul {
-    margin-top: 0;
-    padding: 0;
-    width: 200px;
+    ul {
+        margin-top: 0;
+        padding: 0;
+        width: 200px;
 
-}
-
-
-li {
-    display: block;
-    background: black;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid black;
-}
-
-/*Estilo cuando el mouse pasa encima de cada link del menu*/
-li:hover {
-    filter: brightness(110%);
-}
+    }
 
 
-/*<-----------Inicio de CSS para Alquila.html---------->*/
+    li {
+        display: block;
+        background: black;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid black;
+    }
 
-.alquila {
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    li:hover {
+        filter: brightness(110%);
+    }
 
-    padding: 1%;
-    background-color: black;
+
+    /*<-----------Inicio de CSS para Alquila.html---------->*/
+
+    .alquila {
+
+        padding: 1%;
+        background-color: black;
 
 
-}
+    }
 
-.alquila th {
+    .alquila th {
 
-    font-size: medium;
-    background-color: #F8C303;
-    font-weight: bold;
-    text-align: center;
-    box-sizing: content-box;
-    padding: 1px;
-    height: auto;
-    width: auto;
-    max-width: 50%;
-}
+        font-size: medium;
+        background-color: #F8C303;
+        font-weight: bold;
+        text-align: center;
+        box-sizing: content-box;
+        padding: 1px;
+        height: auto;
+        width: auto;
+        max-width: 50%;
+    }
 
-.alquila td {
+    .alquila td {
 
-    font-size: medium;
-    background-color: white;
-    font-weight: bold;
-    text-align: center;
-    box-sizing: content-box;
-    padding: 1px;
-    height: auto;
-    width: auto;
-    max-width: 50%;
-}
+        font-size: medium;
+        background-color: white;
+        font-weight: bold;
+        text-align: center;
+        box-sizing: content-box;
+        padding: 1px;
+        height: auto;
+        width: auto;
+        max-width: 50%;
+    }
 
-.alquila h4 {
+    .alquila h4 {
 
-    color: white;
-    font-weight: bold;
-    box-sizing: content-box;
-}
-.alquila img {
-    transition: transform .5s;
-    width: 150px;
-    margin: 0 auto;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-.alquila img:hover{
-    transform:scale(3.5);
-}
+        color: white;
+        font-weight: bold;
+        box-sizing: content-box;
+    }
 
-#tabla-dolar th{
+    .alquila img {
+        transition: transform .5s;
+        width: 150px;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
 
-    max-width:100%;
-    white-space:nowrap;
+    .alquila img:hover {
+        transform: scale(3.5);
+    }
 
-}
-#tabla-dolar td{
+    #tabla-dolar th {
 
-    max-width:100%;
-    white-space:nowrap;
+        max-width: 100%;
+        white-space: nowrap;
 
-}
+    }
 
-/*<-----------Fin de CSS para Alquila.html---------->*/
+    #tabla-dolar td {
 
-/*<-----------Inicio de CSS para recorridos.html---------->*/
-.recorridos {
+        max-width: 100%;
+        white-space: nowrap;
 
-    background-color: black;
-    padding: 0%;
-    margin: 0%;
-    text-align: center;
-}
+    }
 
-/*<-----------Fin de CSS para recorridos.html---------->*/
+    /*<-----------Fin de CSS para Alquila.html---------->*/
 
-/*  what problem your offering solves  | Cite examples of whom you’ve served |
+    /*<-----------Inicio de CSS para recorridos.html---------->*/
+    .recorridos {
+
+        background-color: black;
+        padding: 0%;
+        margin: 0%;
+        text-align: center;
+    }
+
+    /*<-----------Fin de CSS para recorridos.html---------->*/
+
+    /*  what problem your offering solves  | Cite examples of whom you’ve served |
 Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
 width560 y height 315 | una animacion de un mono o bici que arrastre a las fotos de nosotros 
 y que despliegue un breve resumen | Estimulamos la movilidad sustentable en la ciudad desde 1996, brindando soluciones ecologicas
