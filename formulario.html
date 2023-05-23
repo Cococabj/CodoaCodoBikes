@@ -1,0 +1,58 @@
+<!--
+
+    ESTE HTML ES UNICAMENTE PARA GUARDAR EL FORMULARIO //NO BORRAR//
+
+
+        <div id="Contacto">
+            <form action="./show-data.html" target="_blank">
+                <br>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" placeholder="Nombre" required minlength="5" maxlength="20" name="Nombre" id="Nombre">
+                <br>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" placeholder="Apellido" required minlength="5" maxlength="20" name="Apellido"
+                    id="Apellido">
+                <br>
+                <label for="Documento">Documento:</label>
+                <input type="text" placeholder="12345678" required minlength="7" maxlength="8" name="Documento"
+                    id="Documento">
+                <br>
+                <label for="Telefono">Telefono</label>
+                <input type="tel" placeholder="Telefono" required name="Telefono" id="Telefono">
+                <br>
+                <label for="Pago">Medio de pago</label>
+                <input type="text" list="Pago" name="Pago" required>
+                <datalist id="Pago">
+                    <option value="Tarjeta de credito">
+                    <option value="Tarjeta de debito">
+                    <option value="Transferencia">
+                    <option value="Efectivo">
+                </datalist>
+                <br>
+                <label>Punto de retiro</label>
+                <input type="text" list="Ubicacion" name="Ubicacion" required>
+                <datalist id="Ubicacion">
+                    <option value="Microcentro">
+                    <option value="Caballito">
+                    <option value="Palermo">
+                    <option value="Villa Luro">
+                </datalist>
+                <br>
+                <label for="Fecha">Fecha y hora de inicio del alquiler</label>
+                <input type="date" required min="2022-01-01" max="2024-12-31" name="Fecha" id="Fecha">
+                <label for="Hora"></label>
+                <input type="time" required min="08:00" max="22:00" name="Hora" id="Hora">
+                <br>
+                <label for="Mail">Ingresar E-Mail:</label>
+                <input type="text" placeholder="ejemplo@mail.com" required minlength="5" maxlength="50" name="Mail"
+                    id="Mail">
+                <br>
+                <label for="Comentarios">Comentarios:</label>
+                <br>
+                <textarea placeholder="Comentarios o sugerencias (hasta 1000 caracteres)" minlength="10"
+                    maxlength="1000" name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+        </div>
+-->
