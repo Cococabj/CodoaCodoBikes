@@ -561,7 +561,7 @@ footer {
     .container-inception {
         background-color:#F8C303;
         width: 98%;
-        height: 700px;
+        height: 580px;
         padding: 1%;
         margin: 0 auto;
     }
@@ -571,12 +571,13 @@ footer {
         font-weight: bolder;
         font-size: xx-large;
         height: 50px;
+        margin: 10px;
     }
 
     .carrusel-container
     {
         background-color: white;
-        width: 60%;
+        width: 65%;
         height: 470px;
         padding: 1%;
         margin: 0 auto;
