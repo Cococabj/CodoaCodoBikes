@@ -1,0 +1,52 @@
+<!-- borrar cuando funcione bien el carrusel -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./carrousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="carrusel" id="id_carrusel"></div>
+
+    <script>
+        // Fetch JSON data
+        fetch('https://api.npoint.io/e97e10b6bdb13a92ee8d')
+            .then(response => response.json())
+            .then(data => {
+                const imageGallery = document.getElementById('id_carrusel');
+
+                // Get the "bicycles" property from the JSON
+                const bicycles = data.bicycles;
+
+                // Iterate over each bicycle object
+                bicycles.forEach(bicycle => {
+                    // Get the image URL for each bicycle
+                    const imageUrl = bicycle.image;
+
+                    // Create an <img> element for each image
+                    const image = document.createElement('img');
+                    image.src = imageUrl;
+                    image.classList.add('imagen-carrusel');
+
+                    // Append the image to the gallery container
+                    imageGallery.appendChild(image);
+                });
+            })
+            .catch(error => console.log(error));
+    </script>
+
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./JavaScript/bikes.js"></script>
+</body>
+
+</html>
