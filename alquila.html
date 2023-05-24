@@ -22,7 +22,7 @@
     <main>
         <div class="alquila">
             <div>
-                <h4>Resultados de la multiplicación:</h4>
+                <h4>(prueba, eliminar) Resultados de la multiplicación</h4>
                 <div id="resultados"></div>
             </div>
             <!-- Inserta tabla del dolar en dolar.js -->
@@ -34,10 +34,15 @@
             <div id="biciApi">
                 <div id="app-bici">
                     <!-- Agregar un carrouel con los modelos posibles -->
-                    <h4>Aca iria el carrousel</h4>
-                    <div id="carrousel" v-for="elemento in bicycles">
-                        <img :src="elemento.image" :alt="elemento.type">
-
+                    <div class="container-inception">
+                        <p>Podes ver nuestros modelos en este Carrusel</p>
+                        <div class="carrusel-container">
+                            <div class="carrusel" id="id_carrusel"></div>
+                            <div class="texto-carrusel">
+                                <p>Un lindo carrusel para ver en grande los modelos, si a alguien se le ocurre algo para
+                                    poner aca mejor, sino saco el texto</p>
+                            </div>
+                        </div>
                     </div>
                     <h4>Conoce todos los modelos que podes Alquilar!</h1>
                         <table border="1">
@@ -74,6 +79,7 @@
     <script src="./JavaScript/bikes.js"></script>
     <script src="./JavaScript/dolar.js"></script>
     <script src="./JavaScript/precios.js"></script>
+    <script src="./JavaScript/carrusel.js"></script>
 </body>
 
 </html>
