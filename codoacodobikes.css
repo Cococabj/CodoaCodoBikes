@@ -87,6 +87,17 @@
     padding: 1%;
 }
 
+#footer {
+    padding: left 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #F8C303;
+}
+
+.whats-app {
+    display: inline;
+}
+
 /*<---Fin CSS para el Footer--->*/
 
 p {
@@ -97,26 +108,17 @@ p {
 h1 {
     color: white;
     font-size: 35px;
-
 }
 
 #inicio {
-
     padding: left 100px;
     display: flex;
     justify-content: center;
     background-color: #F8C303;
 }
-#inicio h1{
-    
+
+#inicio h1 {
     color: black;
-}
-
-#footer {
-    padding: left 100px;
-    display: flex;
-    justify-content: center;
-    background-color: #F8C303;
 }
 
 a {
@@ -137,39 +139,31 @@ a {
 
 @media screen and (max-width: 800px) {
     #pruebanav {
-
         width: 100%;
         display: inline-block;
         background-color: black;
-
     }
-
     .sandwich {
         display: none;
     }
-
     .flex-container {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
     .ubicacion {
         font-size: 60%;
     }
-
     .redes p {
         font-size: 60%;
     }
-
     .desarrollo p {
         font-size: 60%;
     }
-
     .creacion p {
         font-size: 40%;
     }
-    .container-inception{
+    .container-inception {
         display: none;
     }
 }
@@ -181,77 +175,61 @@ a {
         display: inline-flex;
         background-color: black;
     }
-
     .sandwich {
         display: none;
     }
-
     .flex-container {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-
     .ubicacion {
         font-size: 75%;
     }
-
     .redes p {
         font-size: 70%;
     }
-
     .desarrollo p {
         font-size: 70%;
     }
-
     .creacion p {
         font-size: 50%;
     }
-    .container-inception{
+    .container-inception {
         display: none;
     }
-
-
 }
 
 @media screen and (min-width: 1200px) {
 
     #pruebanav {
-
         width: 100%;
         display: inline-flex;
         background-color: black;
     }
-
     .sandwich {
         display: contents;
         text-align: left;
-
     }
-
     .flex-container {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-
     .ubicacion {
         font-size: 100%;
     }
-
     .redes p {
         font-size: 80%;
     }
-
     .desarrollo p {
         font-size: 80%;
     }
-
     .creacion p {
         font-size: 60%;
     }
-    .container-inception{
-        display:block;
+    .container-inception {
+        display: block;
     }
 }
 
@@ -266,9 +244,7 @@ a {
     @media (max-width: 767px) {
         width: 100%;
         display: inline-block;
-
     }
-
 }
 
 .parrafovideo {
@@ -281,7 +257,6 @@ a {
     padding: 2%;
     font-size: medium;
     /*flex: 66%;*/
-
 }
 
 .video {
@@ -314,7 +289,6 @@ li {
     top: 50%;
     left: 20%;
     color: #7286D3;
-
 }
 
 body {
@@ -343,7 +317,6 @@ footer {
         display: inline-block;
         justify-content: center;
     }
-
 }
 
 .textoabout2 {
@@ -351,7 +324,6 @@ footer {
     top: 80px;
     left: 300px;
     color: white;
-
 }
 
 .parrafoencima {
@@ -362,7 +334,6 @@ footer {
     color: white;
     font-size: 28px;
     word-wrap: break-word;
-
 }
 
 .boxtextoabout {
@@ -402,8 +373,6 @@ footer {
     text-align: center;
     word-wrap: break-word;
     display: inline-block;
-
-
 }
 
 .fotoscreadores {
@@ -419,6 +388,7 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+
     @media screen and (max-width: 767px) {
 
         width: 100%;
@@ -426,8 +396,9 @@ footer {
         background-color: black;
         align-items: center;
     }
+}
 
-    /* seccion 2 about us */
+/* seccion 2 about us */
 
 .sandwich ul {
     display: none;
@@ -465,13 +436,11 @@ footer {
     background: black;
 }
 
-    ul {
-        margin-top: 0;
-        padding: 0;
-        width: 200px;
-
-    }
-
+ul {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+}
 
 li {
     display: block;
@@ -491,15 +460,11 @@ li:hover {
 /*<-----------Inicio de CSS para Alquila.html---------->*/
 
 .alquila {
-
     padding: 1%;
     background-color: black;
-
-
 }
 
 .alquila th {
-
     font-size: medium;
     background-color: #F8C303;
     font-weight: bold;
@@ -512,7 +477,6 @@ li:hover {
 }
 
 .alquila td {
-
     font-size: medium;
     background-color: white;
     font-weight: bold;
@@ -525,214 +489,232 @@ li:hover {
 }
 
 .alquila h4 {
+    color: white;
+    font-weight: bold;
+    box-sizing: content-box;
+    text-align: center;
+}
 
-        color: white;
-        font-weight: bold;
-        box-sizing: content-box;
-        text-align: center ;
-    }
-    .alquila td img {
-        transition: transform .5s;
-        width: 150px;
-        margin: 0 auto;
-        border-radius: 10px;
-        border: 1px solid black;
-    }
+.alquila td img {
+    transition: transform .5s;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid black;
+}
 
 .alquila img:hover {
     transform: scale(3.5);
 }
 
-
-    #tabla-dolar th {
-
+#tabla-dolar th {
     max-width: 100%;
     white-space: nowrap;
-
 }
 
 #tabla-dolar td {
-
     max-width: 100%;
     white-space: nowrap;
+}
 
-    }
-    /*<-----------Inicio carrousel---------->*/
-    .container-inception {
-        background-color:#F8C303;
-        width: 98%;
-        height: 580px;
-        padding: 1%;
-        margin: 0 auto;
-    }
-    .container-inception p{
-        color: black;
-        text-align: center;
-        font-weight: bolder;
-        font-size: xx-large;
-        height: 50px;
-        margin: 10px;
-    }
+/*<-----------Inicio carrousel---------->*/
+.container-inception {
+    background-color: #F8C303;
+    width: 98%;
+    height: 580px;
+    padding: 1%;
+    margin: 0 auto;
+}
 
-    .carrusel-container
-    {
-        background-color: white;
-        width: 65%;
-        height: 470px;
-        padding: 1%;
-        margin: 0 auto;
-        border-radius: 10%;
-    }
-    .texto-carrusel {
-        background-color: white;
-        height: 70px;
-        width: 100%;
-    }
-    .texto-carrusel p{
-        color: black;
-        text-align: center;
-        font-weight: bold;
-        font-size: x-large;
-    }
-    .texto-carrusel a{
-        color: black;
-        text-align: center;
-        font-weight: bold;
-        font-size: x-large;
-    }
-    
-    .imagen-carrusel {
-        display: inline-block;
-        margin: 10px;
-    }
-    .carrusel {
-        width: 200px;
-        height: 200px;
-      }
-      
-      @keyframes display {
-        0% {
-          transform: translateX(150px);
-          opacity: 0;
-        }
-        10% {
-          transform: translateX(100px);
-          opacity: 1;
-        }
-        20% {
-          transform: translateX(0);
-          opacity: 0.01;
-        }
-        30% {
-          transform: translateX(-100px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(-100px);
-          opacity: 0;
-        }
-      }
-      .imagen-carrusel {
-        height: 350px;
-        border-radius: 10%;
-        border-color: black;
-        border-width: 10px;
-      }
-      .carrusel {
-        position: relative;
-        width: 350px;
-        height: 350px;
-        margin-top: 1%
-      
-      }
-      
-      .carrusel > img {
-        position: absolute;
-        top: 0;
-        left: calc(50% - 100px);
+.container-inception p {
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    height: 50px;
+    margin: 10px;
+}
+
+.carrusel-container {
+    background-color: white;
+    width: 65%;
+    height: 470px;
+    padding: 1%;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+.texto-carrusel {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+}
+
+.texto-carrusel p {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.texto-carrusel a {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.imagen-carrusel {
+    display: inline-block;
+    margin: 10px;
+}
+
+.carrusel {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(150px);
         opacity: 0;
-        animation: display 32s infinite;
-      }
-      
-      img:nth-child(2) {
-        animation-delay: 4s;
-      }
-      img:nth-child(3) {
-        animation-delay: 8s;
-      }
-      img:nth-child(4) {
-        animation-delay: 12s;
-      }
-      img:nth-child(5) {
-        animation-delay: 16s;
-      }
-      img:nth-child(6) {
-        animation-delay: 20s;
-      }
-      img:nth-child(7) {
-        animation-delay: 24s;
-      }
-      img:nth-child(8) {
-        animation-delay: 28s;
-      }
-    /*<-----------Fin carrousel---------->*/
+    }
+
+    10% {
+        transform: translateX(100px);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 0.01;
+    }
+
+    30% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.imagen-carrusel {
+    height: 350px;
+    border-radius: 10%;
+    border-color: black;
+    border-width: 10px;
+}
+
+.carrusel {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin-top: 1%
+}
+
+.carrusel>img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 32s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+img:nth-child(4) {
+    animation-delay: 12s;
+}
+
+img:nth-child(5) {
+    animation-delay: 16s;
+}
+
+img:nth-child(6) {
+    animation-delay: 20s;
+}
+
+img:nth-child(7) {
+    animation-delay: 24s;
+}
+
+img:nth-child(8) {
+    animation-delay: 28s;
+}
+
+/*<-----------Fin carrousel---------->*/
 
 /*<-----------Fin de CSS para Alquila.html---------->*/
 
-    /*<-----------Inicio boton alquila---------->*/
-    .boton-alquila {
-        width: 200px;
-        background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 25px;
-        position: relative;
-        color: #fff;
-        text-decoration: none;
-        display: block;
-        font-weight: normal;
-        border-radius: 6px;
-        overflow: hidden;
-    }
-    
-    .boton-alquila:hover {
-        -webkit-animation: play 1.6s ease-in infinite;
-        animation: play 1.6s ease-in infinite;
-    }
-    
-    .boton-alquila span {
-        padding: 14px 0; ;
-        font-size: 22px;
-        display: block;
-        margin: 3px;
-        background: #000;
-        border-radius: 3px;
-    }
-    
-    @keyframes play {
-        0% {
-            background-position: 0px;
-        }
-        20% {
-            background-position: -110px;
-        }
-        35% {
-            background-position: -180px;
-        }
-        50% {
-            background-position: -210px;
-        }
-        80% {
-            background-position: -350px;
-        }
-        100% {
-            background-position: -390px;
-        }
-    }
-    /*<-----------Fin boton alquila---------->*/
-    /*<-----------Inicio de CSS para recorridos.html---------->*/
-    .recorridos {
+/*<-----------Inicio boton alquila---------->*/
+.boton-alquila {
+    width: 200px;
+    background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    border-radius: 6px;
+    overflow: hidden;
+}
 
+.boton-alquila:hover {
+    -webkit-animation: play 1.6s ease-in infinite;
+    animation: play 1.6s ease-in infinite;
+}
+
+.boton-alquila span {
+    padding: 14px 0;
+    ;
+    font-size: 22px;
+    display: block;
+    margin: 3px;
+    background: #000;
+    border-radius: 3px;
+}
+
+@keyframes play {
+    0% {
+        background-position: 0px;
+    }
+
+    20% {
+        background-position: -110px;
+    }
+
+    35% {
+        background-position: -180px;
+    }
+
+    50% {
+        background-position: -210px;
+    }
+
+    80% {
+        background-position: -350px;
+    }
+
+    100% {
+        background-position: -390px;
+    }
+}
+
+/*<-----------Fin boton alquila---------->*/
+/*<-----------Inicio de CSS para recorridos.html---------->*/
+.recorridos {
     background-color: black;
     padding: 0%;
     margin: 0%;

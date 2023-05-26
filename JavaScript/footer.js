@@ -12,9 +12,9 @@ document.write(`
                                 width="25"></a>
                         <a href="https://www.youtube.com"><img src="./img/youtube.png" alt="www.youtube.com"
                                 width="25"></a>
-                        <p>Tambien podes encontrarnos en Whats App al 11-2222-3333<span><a class="whats-app"
-                                    href="https://api.whatsapp.com/send?phone="><img src="./img/whatsapp.png" alt=""
-                                        width="35"></a></span></p>
+                        <p>Tambien podes encontrarnos en Whats App al 11-1111-1111 <a class="whats-app"
+                                    href="https://api.whatsapp.com/send?phone=11-1111-1111"><img src="./img/whatsapp.png" alt="https://api.whatsapp.com/send?phone=11-1111-1111"
+                                        width="35"></a></p>
                     </div>
                     <div class="desarrollo">
                         <p>Codo a Codo Bikes esta desarrolado con:</p>
