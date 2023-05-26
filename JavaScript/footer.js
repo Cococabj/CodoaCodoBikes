@@ -2,6 +2,14 @@ document.write(`
 
 <div id="footer">
                 <div class="footer-container">
+                <div class="local">
+                <br>
+                    <p>Nuestra sede central esta en 
+                    <a href="https://goo.gl/maps/GxFxn6baeFy9AKbs5">
+                    Av. Lope de Vega 326</a></p>
+                    <p>Podes ver y probar los modelos disponibles antes de alquilarlos!</p>
+                <br>
+                </div>
                     <div class="redes">
                         <p>Podes seguirnos en:</p>
                         <a href="https://www.instagram.com"><img src="./img/instagram.png" alt="www.instagram.com"
