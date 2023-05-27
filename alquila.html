@@ -12,34 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./codoacodobikes.css">
     <title>Alquila Ahora!</title>
-    <style>
-        /* Estilos para la tabla */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1%;
-        }
-        
-        th,
-        td {
-            padding: 1px;
-            text-align: center;
-            font-size: medium;
-            border: 1px solid #ccc;
-            font-family: sans-serif
-            }
-        
-        th {
-            background-color: #f2f2f2;
-            font-size: medium;
-            font-family: sans-serif
-        }
-        
-        td,img {
-            max-width: 50%;
-            height: auto;
-        }
-    </style>
 </head>
 
 <body>
@@ -48,43 +20,54 @@
         <script src="./JavaScript/header.js"></script>
     </header>
     <main>
-        <h4>"AGREGAR UN CARROUSEL ACA"</h4>
-        <!-- Agregar un carrouel con los modelos posibles -->
-        <div>
-            <h4>Resultados de la multiplicación:</h4>
-            <div id="resultados"></div>
-          </div>
-        <!-- Inserta tabla del dolar en dolar.js -->
-        <h4>Monedas</h4>
-        <div id="tabla-dolar">
-            <div id="app-blue">
+        <div class="alquila">
+            <div>
+                <h4>(prueba, eliminar) Resultados de la multiplicación</h4>
+                <div id="resultados"></div>
             </div>
-        </div>
-        <div id="biciApi">
-            <div id="app-bici">
-                <h4>Conoce nuestros productos</h1>
-                    <table border="1">
-                        <tr>
-                            <th>Tipo</th>
-                            <th>Ancho total</th>
-                            <th>Rodado</th>
-                            <th>A tener en cuenta</th>
-                            <th>Imagen</th>
-                            <th>USD/Dia</th>
-                            <th>$/Dia</th>
-                            <th>Alquilar</th> <!-- Crear Boton alquilar -->
-                        </tr>
-                        <tr v-for="elemento in bicycles">
-                            <td>{{elemento.type}}</td>
-                            <td>{{elemento.total_length_cm}}</td>
-                            <td>{{elemento.wheel_size_inches}}</td>
-                            <td>{{elemento.comment}}</td>
-                            <td><img width="350" :src="elemento.image" :alt="elemento.type"></td>
-                            <td id="precioDia">{{elemento.precio}}</td>
-                            <td id="resultado"></td><!-- Crear Boton alquilar -->
-                            <td></td>
-                        </tr>
-                    </table>
+            <!-- Inserta tabla del dolar en dolar.js -->
+            <h4>Monedas</h4>
+            <div id="tabla-dolar">
+                <div id="app-blue">
+                </div>
+            </div>
+            <div id="biciApi">
+                <div id="app-bici">
+                    <!-- Agregar un carrouel con los modelos posibles -->
+                    <div class="container-inception">
+                        <p>Podes ver nuestros modelos en este Carrusel</p>
+                        <div class="carrusel-container">
+                            <div class="carrusel" id="id_carrusel"></div>
+                            <div class="texto-carrusel">
+                                <p>Un lindo carrusel para ver en grande los modelos, si a alguien se le ocurre algo para
+                                    poner aca mejor, sino saco el texto</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Conoce todos los modelos que podes Alquilar!</h1>
+                        <table border="1">
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Ancho total</th>
+                                <th>Rodado</th>
+                                <th>A tener en cuenta</th>
+                                <th>Imagen</th>
+                                <th>USD/Dia</th>
+                                <th>$/Dia</th>
+                                <th>Alquilar</th> <!-- Crear Boton alquilar -->
+                            </tr>
+                            <tr v-for="elemento in bicycles">
+                                <td>{{elemento.type}}</td>
+                                <td>{{elemento.total_length_cm}}</td>
+                                <td>{{elemento.wheel_size_inches}}</td>
+                                <td>{{elemento.comment}}</td>
+                                <td><img :src="elemento.image" :alt="elemento.type"></td>
+                                <td id="precioDia">{{elemento.precio}}</td>
+                                <td id="resultado"></td><!-- Crear Boton alquilar -->
+                                <td><a href="./formulario.html" class="boton-alquila">Alquila ahora!</a></td>
+                            </tr>
+                        </table>
+                </div>
             </div>
         </div>
     </main>
@@ -96,6 +79,7 @@
     <script src="./JavaScript/bikes.js"></script>
     <script src="./JavaScript/dolar.js"></script>
     <script src="./JavaScript/precios.js"></script>
+    <script src="./JavaScript/carrusel.js"></script>
 </body>
 
 </html>

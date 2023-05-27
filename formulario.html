@@ -1,0 +1,117 @@
+<!--
+
+    ESTE HTML ES UNICAMENTE PARA GUARDAR EL FORMULARIO //NO BORRAR//
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="./img/bicicleta.png">
+    <link rel="shorcut icon" href="/IMG/bicicleta.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./codoacodobikes.css">
+    <title>Formulario de alquiler</title>
+</head>
+
+<body>
+    <header>
+        <script src="./JavaScript/header.js"></script>
+    </header>
+    <main>
+        <div class="container-inception">
+            <p>Podes ver nuestros modelos en este Carrusel</p>
+            <div class="carrusel-container">
+                <div class="carrusel" id="id_carrusel"></div>
+                <div class="texto-carrusel">
+                    <a href="./formulario.html" class="boton-alquila">Alquila ahora!</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-formulario">
+            <div class="formulario" id="formulario">
+                <form action="./show-data.html" target="_blank">
+                    <p>Completar el formulario con sus datos para continuar con los medios de pago y alquiler</p>
+                    <br>
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre" required minlength="5" maxlength="20" name="Nombre"
+                        id="Nombre">
+                    <br>
+                    <label for="Apellido">Apellido:</label>
+                    <input type="text" placeholder="Apellido" required minlength="5" maxlength="20" name="Apellido"
+                        id="Apellido">
+                    <br>
+                    <label for="Documento">Documento o Pasaporte:</label>
+                    <input type="text" placeholder="12345678/ABC123456" required minlength="7" maxlength="8" size="16"
+                        name="Documento" id="Documento">
+                    <br>
+                    <label for="Telefono">Telefono:</label>
+                    <input type="tel" placeholder="Telefono" required name="Telefono" id="Telefono" size="15">
+                    <br>
+                    <label for="Pago">Medio de pago:</label>
+                    <input type="text" list="Pago" name="Pago" required size="20">
+                    <datalist id="Pago">
+                        <option value="Tarjeta de credito">
+                        <option value="Tarjeta de debito">
+                        <option value="Transferencia">
+                        <option value="Efectivo">
+                    </datalist>
+                    <br>
+                    <label for="retiro">Punto de retiro:</label>
+                    <input type="text" list="retiro" name="retiro" required size="13">
+                    <datalist id="retiro">
+                        <option value="Microcentro">
+                        <option value="Caballito">
+                        <option value="Palermo">
+                        <option value="Villa Luro">
+                    </datalist>
+                    <br>
+                    <label for="fecha">Fecha y hora de inicio del alquiler:</label>
+                    <input type="date" required min="2022-01-01" max="2024-12-31" name="fecha" id="fecha">
+                    <label for="Hora"></label>
+                    <input type="time" required min="08:00" max="22:00" name="Hora" id="Hora">
+                    <br>
+                    <label for="fin">Cantidad de dias de alquiler:</label>
+                    <input type="text" list="fin" name="fin" required size="2">
+                    <datalist id="fin">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                        <option value="11">
+                        <option value="12">
+                        <option value="13">
+                        <option value="14">
+                        <option value="15">
+                            <br>
+                            <label for="Mail">Ingresar E-Mail:</label>
+                            <input type="text" placeholder="ejemplo@mail.com" required minlength="5" maxlength="50"
+                                name="Mail" id="Mail">
+                            <br>
+                            <label for="Comentarios">Comentarios:</label>
+                            <br>
+                            <textarea placeholder="Comentarios o sugerencias (hasta 1000 caracteres)" minlength="10"
+                                maxlength="1000" name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+                            <br>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="./JavaScript/footer.js"></script>
+    </footer>
+    <script src="./JavaScript/carrusel.js"></script>
+</body>
+
+</html>
