@@ -87,7 +87,6 @@
     padding: 1%;
 }
 
-<<<<<<< HEAD
 /*<---Fin CSS para el Footer--->*/
 
 p{
@@ -108,11 +107,7 @@ h1{
 }
 #footer{
     /*aca va el color del div dentro del header*/
-    padding: left 100px; ;
-=======
-#footer {
     padding: left 100px;
->>>>>>> 995b4b64421ad81f9ce4034f36be2aebac552974
     display: flex;
     justify-content: center;
     background-color: #F8C303;
@@ -506,20 +501,13 @@ li:hover {
     filter: brightness(110%);
 }
 
-<<<<<<< HEAD
-  .recorridos {
-=======
-
 /*<-----------Inicio de CSS para Alquila.html---------->*/
->>>>>>> 995b4b64421ad81f9ce4034f36be2aebac552974
 
 .alquila {
     padding: 1%;
     background-color: black;
 }
 
-<<<<<<< HEAD
-=======
 .alquila th {
     font-size: medium;
     background-color: #F8C303;
@@ -772,7 +760,6 @@ img:nth-child(8) {
 /*<-----------Fin boton alquila---------->*/
 /*<-----------Inicio de CSS para recorridos.html---------->*/
 .recorridos {
->>>>>>> 995b4b64421ad81f9ce4034f36be2aebac552974
     background-color: black;
     padding: 0%;
     margin: 0%;
