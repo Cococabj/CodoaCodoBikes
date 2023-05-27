@@ -137,7 +137,7 @@ For mobile phones:
 /*<---Fin CSS para el Footer--->*/
 
 p{
-    color: white;
+    color: black;
     font-size: 25px;
 }
 h1{
@@ -409,17 +409,18 @@ ul {
     filter: brightness(110%);
   }
 
+  .recorridos {
 
-/*<-----------CSS para Alquila.html---------->*/ 
 
-
-.recorridos {
-    
     background-color: black;
     padding: 0%;
     margin: 0%;
     text-align: center;
 }
+/*<-----------CSS para Alquila.html---------->*/ 
+
+
+
 
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
 Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
