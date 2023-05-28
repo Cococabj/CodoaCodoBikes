@@ -299,7 +299,7 @@ a {
     word-wrap: break-word;
     display: inline-block;
     width: 100%;
-    padding: 2%;
+    padding: 0%;
     font-size: medium;
     /*flex: 66%;*/
 }
@@ -410,7 +410,7 @@ footer {
     text-align: center;
 }
 
-/* seccion 2 about us */
+/* seccion 2 (creadores) about us inicio */
 .creadores {
     border-radius: 50%;
     color: coral;
@@ -418,6 +418,7 @@ footer {
     text-align: center;
     word-wrap: break-word;
     display: inline-block;
+    padding: 2%;
 }
 
 .fotoscreadores {
@@ -433,17 +434,17 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 
     @media screen and (max-width: 767px) {
 
         width: 100%;
         display: inline-block;
         background-color: black;
-        align-items: center;
     }
 }
 
-/* seccion 2 about us */
+/* seccion 2 (creadores) about us fin */
 
 .sandwich ul {
     display: none;
