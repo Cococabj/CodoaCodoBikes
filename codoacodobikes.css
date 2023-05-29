@@ -471,7 +471,7 @@ footer {
 }
 .h2creadores{
     color: #f8c303;
-    
+    margin: auto;
 }
 
 /* seccion 2 (creadores) about us fin */
@@ -590,6 +590,11 @@ li:hover {
 #tabla-dolar td {
     max-width: 100%;
     white-space: nowrap;
+}
+#precioDia {
+    font-weight: bold;
+    font-size: x-large;
+    padding: 10px;
 }
 
 /*<-----------Inicio carrousel---------->*/
@@ -737,6 +742,7 @@ img:nth-child(8) {
     background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
     text-align: center;
     margin: auto;
+    margin-top: 5%;
     position: relative;
     color: black;
     font-weight: bold;
@@ -804,12 +810,13 @@ img:nth-child(8) {
     padding: 1%;
     border: black;
     border-width: 4px;
-    border-style: dashed;
+    border-style:double;
     font-size: 75%;
     font-weight: bold;
     color: black !important;
-    width: 75%;
+    width: 50%;
     margin: auto;
+    height: auto;
 }
 
 .formulario p {
@@ -823,8 +830,17 @@ img:nth-child(8) {
 
 .container-formulario {
     background-color: black;
+    height: auto;
 }
 
+.botones-form{
+    height: auto;
+    margin-left: auto ;
+}
+.form{
+    height: auto;
+    margin-left: 28% ;
+}
 /* seccion about us en la home (inicio) */
 
 .abouthome {

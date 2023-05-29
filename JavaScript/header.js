@@ -12,21 +12,17 @@ document.write(`
                     <label for="menu"> ☰ </label>
                     <ul>
                         <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./alquila.html">Alquila Ahora</a></li>
-                        <li><a href="./recorridos.html">Servicios</a></li>
                         <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
                         <li><a href="./index.html#sucursales">Sucursales</a></li>
                         <li><a href="./recorridos.html">Recorridos</a></li>
+                        <li><a href="./alquila.html" class="boton-alquila">Alquila Ahora</a></li>
                     </ul>
                 </div>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./alquila.html">Alquila Ahora</a></li>
-                <li><a href="./recorridos.html">Servicios</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
                 <li><a href="./index.html#sucursales">Sucursales</a></li>
                 <li><a href="./recorridos.html">Recorridos</a></li>
+                <li><a href="./alquila.html" class="boton-alquila">Alquila Ahora</a></li>
             </nav>
         </div>
 `);

@@ -35,12 +35,11 @@
                 <div id="app-bici">
                     <!-- Agregar un carrouel con los modelos posibles -->
                     <div class="container-inception">
-                        <p>Podes ver nuestros modelos en este Carrusel</p>
+                        <p>La mejor seleccion de bicis para conocer Buenos Aires!</p>
                         <div class="carrusel-container">
                             <div class="carrusel" id="id_carrusel"></div>
                             <div class="texto-carrusel">
-                                <p>Un lindo carrusel para ver en grande los modelos, si a alguien se le ocurre algo para
-                                    poner aca mejor, sino saco el texto</p>
+                                <p>Podes probar todos nuestros modelos en la sucursal Villa Luro!</p>
                             </div>
                         </div>
                     </div>
@@ -50,9 +49,8 @@
                                 <th>Tipo</th>
                                 <th>Ancho total</th>
                                 <th>Rodado</th>
-                                <th>A tener en cuenta</th>
                                 <th>Imagen</th>
-                                <th>USD/Dia</th>
+                                <th>A tener en cuenta</th>
                                 <th>$/Dia</th>
                                 <th>Alquilar</th> <!-- Crear Boton alquilar -->
                             </tr>
@@ -60,10 +58,9 @@
                                 <td>{{elemento.type}}</td>
                                 <td>{{elemento.total_length_cm}}</td>
                                 <td>{{elemento.wheel_size_inches}}</td>
-                                <td>{{elemento.comment}}</td>
                                 <td><img :src="elemento.image" :alt="elemento.type"></td>
+                                <td>{{elemento.comment}}</td>
                                 <td id="precioDia">{{elemento.precio}}</td>
-                                <td id="resultado"></td><!-- Crear Boton alquilar -->
                                 <td><a href="./formulario.html" class="boton-alquila">Alquila ahora!</a></td>
                             </tr>
                         </table>
@@ -74,7 +71,6 @@
     <footer>
         <script src="./JavaScript/footer.js"></script>
     </footer>
-
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./JavaScript/bikes.js"></script>
     <script src="./JavaScript/dolar.js"></script>
