@@ -702,11 +702,10 @@ img:nth-child(8) {
 
 /*<-----------Inicio boton alquila---------->*/
 .boton-alquila {
-    width: 200px;
+    width: 150px;
     background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
     text-align: center;
-    margin: 0 auto;
-    margin-top: 25px;
+    margin: auto;
     position: relative;
     color: black;
     font-weight: bold;
@@ -765,10 +764,6 @@ img:nth-child(8) {
     margin: 0%;
     text-align: center;
 }
-/*<-----------CSS para Alquila.html---------->*/ 
-
-
-
 
 /*<-----------Fin de CSS para recorridos.html---------->*/
 /*<-----------Inicio de CSS para formulario.html---------->*/
