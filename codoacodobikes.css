@@ -87,8 +87,6 @@
     padding: 1%;
 }
 
-/*<---Fin CSS para el Footer--->*/
-
 p {
     color: black;
     font-size: 25px;
@@ -223,6 +221,9 @@ a {
     .container-inception {
         display: none;
     }
+    .inception-recorridos{
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -262,6 +263,9 @@ a {
     .container-inception {
         display: none;
     }
+    .inception-recorridos{
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -270,6 +274,8 @@ a {
         width: 100%;
         display: inline-flex;
         background-color: black;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .sandwich {
@@ -409,7 +415,7 @@ footer {
 
 .boxtextoabout {
     /*background-color: blue;*/
-    background: rgba(255, 231, 204, 0.3);
+    background: rgba(255, 231, 204, 0.5);
     display: block;
     justify-content: center;
     position: relative;
@@ -417,9 +423,9 @@ footer {
     left: -2%;
     margin: 5%;
     padding: 2%;
-    width: 20%;
+    width: 28%;
     /*flex-flow: row wrap;*/
-    height: 55%;
+    height: 50%;
     border-radius: 15px;
     word-wrap: break-word;
 
@@ -434,6 +440,12 @@ footer {
     /* color:#13005A;*/
     color: #f8c303;
     text-align: center;
+}
+.textabout p{
+    /* color:#13005A;*/
+    color: black;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* seccion 2 (creadores) about us inicio */
@@ -499,7 +511,7 @@ footer {
     font-weight: bold;
     text-align: left;
     user-select: none;
-
+    margin-top: 1px;
 }
 
 /* Estilo del boton cuando se pasa el mouse por encima*/
@@ -794,15 +806,6 @@ img:nth-child(8) {
 }
 
 /*<-----------Fin boton alquila---------->*/
-/*<-----------Inicio de CSS para recorridos.html---------->*/
-.recorridos {
-    background-color: black;
-    padding: 0%;
-    margin: 0%;
-    text-align: center;
-}
-
-/*<-----------Fin de CSS para recorridos.html---------->*/
 /*<-----------Inicio de CSS para formulario.html---------->*/
 
 .formulario {
@@ -860,7 +863,6 @@ img:nth-child(8) {
     }
 }
 
-
 .contenedorabout {
     width: 50%;
     background-image: url("./img/velodromo.jpg");
@@ -884,6 +886,7 @@ img:nth-child(8) {
     text-align: center;
     word-wrap: break-word;
     padding: 5%;
+    margin-left: 80px;
     @media (max-width: 1035px) {
         width: 100%;
         position: absolute;
@@ -967,13 +970,47 @@ img:nth-child(8) {
     text-align: center;
     top: 60%
 }
-
-
-
-
-
 /*<-----------Fin de CSS para formulario.html---------->*/
+/*<-----------inicio de CSS para recorridos.html---------->*/
+.recorridos {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    overflow-wrap: break-word;
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+    font-weight: bold;
+    font-size: x-large;
+}
+.recorridos p{
+    font-weight: bold;
+    margin: 15px;
+}
+.box-video-recorridos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #F8C303;
+    padding: 2%;
+}
+.box-texto-recorridos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2%;
+    
+}
+.titulo-recorridos{
+    text-align: center;
+}
+.inception-recorridos{
+    background-color: #F8C303;
+    padding: 1%;
+}
 
+/*<-----------Fin de CSS para recorridos.html---------->*/
 
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
 Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
