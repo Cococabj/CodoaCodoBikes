@@ -89,23 +89,27 @@
 
 /*<---Fin CSS para el Footer--->*/
 
-p{
+p {
     color: black;
     font-size: 25px;
 }
-h1{
-    color:white;
+
+h1 {
+    color: white;
     font-size: 35px;
 
 }
-#inicio{
+
+#inicio {
     /*aca va el color del div dentro del header*/
-    padding: left 100px; ;
+    padding: left 100px;
+    ;
     display: flex;
     justify-content: center;
-    
+
 }
-#footer{
+
+#footer {
     /*aca va el color del div dentro del header*/
     padding: left 100px;
     display: flex;
@@ -119,7 +123,7 @@ h1{
 
 /*<---Fin CSS para el Footer--->*/
 
-.local p{
+.local p {
     color: black;
     font-size: 80%;
     margin: 0;
@@ -132,17 +136,18 @@ h1{
     text-underline-position: under;
 
 }
+
 .local a:visited {
     color: white;
-  }
+}
 
-.local a{
+.local a {
     color: black;
     font-size: 80%;
     padding: 0%;
     text-align: center;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -188,26 +193,33 @@ a {
         display: inline-block;
         background-color: black;
     }
+
     .sandwich {
         display: none;
     }
+
     .flex-container {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     .ubicacion {
         font-size: 60%;
     }
+
     .redes p {
         font-size: 60%;
     }
+
     .desarrollo p {
         font-size: 60%;
     }
+
     .creacion p {
         font-size: 40%;
     }
+
     .container-inception {
         display: none;
     }
@@ -220,26 +232,33 @@ a {
         display: inline-flex;
         background-color: black;
     }
+
     .sandwich {
         display: none;
     }
+
     .flex-container {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+
     .ubicacion {
         font-size: 75%;
     }
+
     .redes p {
         font-size: 70%;
     }
+
     .desarrollo p {
         font-size: 70%;
     }
+
     .creacion p {
         font-size: 50%;
     }
+
     .container-inception {
         display: none;
     }
@@ -252,27 +271,34 @@ a {
         display: inline-flex;
         background-color: black;
     }
+
     .sandwich {
         display: contents;
         text-align: left;
     }
+
     .flex-container {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+
     .ubicacion {
         font-size: 100%;
     }
+
     .redes p {
         font-size: 80%;
     }
+
     .desarrollo p {
         font-size: 80%;
     }
+
     .creacion p {
         font-size: 60%;
     }
+
     .container-inception {
         display: block;
     }
@@ -299,7 +325,7 @@ a {
     word-wrap: break-word;
     display: inline-block;
     width: 100%;
-    padding: 2%;
+    padding: 0%;
     font-size: medium;
     /*flex: 66%;*/
 }
@@ -410,7 +436,7 @@ footer {
     text-align: center;
 }
 
-/* seccion 2 about us */
+/* seccion 2 (creadores) about us inicio */
 .creadores {
     border-radius: 50%;
     color: coral;
@@ -418,6 +444,7 @@ footer {
     text-align: center;
     word-wrap: break-word;
     display: inline-block;
+    padding: 2%;
 }
 
 .fotoscreadores {
@@ -433,17 +460,21 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 
     @media screen and (max-width: 767px) {
 
         width: 100%;
         display: inline-block;
         background-color: black;
-        align-items: center;
     }
 }
+.h2creadores{
+    color: #f8c303;
+    
+}
 
-/* seccion 2 about us */
+/* seccion 2 (creadores) about us fin */
 
 .sandwich ul {
     display: none;
@@ -765,6 +796,8 @@ img:nth-child(8) {
     text-align: center;
 }
 
+/*<-----------CSS para Alquila.html---------->*/
+
 /*<-----------Fin de CSS para recorridos.html---------->*/
 /*<-----------Inicio de CSS para formulario.html---------->*/
 
@@ -789,9 +822,142 @@ img:nth-child(8) {
     margin: 0.5%;
     text-align: center;
 }
+
 .container-formulario {
     background-color: black;
 }
+
+/* seccion about us en la home (inicio) */
+
+.abouthome {
+    /*la clase padre de la seccion*/
+    background-color: black;
+    position: relative;
+    display: flex;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+
+
+    @media (max-width: 1035px) {
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+    }
+}
+
+
+.contenedorabout {
+    width: 50%;
+    background-image: url("./img/velodromo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 0% 70% 70% 0%;
+    @media (max-width: 1035px) {
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        border-radius: 0%;
+    }
+}
+
+.contenedorbotonabout {
+    width: 50%;
+    position: relative;
+    left: -10%;
+    color: #F8C303;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 5%;
+    @media (max-width: 1035px) {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 5px;
+        justify-content: center;
+    }
+
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    /*color: rgb(193, 163, 98);*/
+    color: #F8C303;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #F8C303;
+    /*rgb(193, 163, 98);*/
+
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+    scale: 3;
+}
+
+.button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button:active {
+    scale: 1;
+}
+
+/* seccion about us en la home (fin) */
+
+/* seccion rentnow en la home (inicio) */
+
+.fondorent {
+    /*clase padre rentnow*/
+    background-image: url("./img/rentnow1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.textorent {
+    width: 100%;
+    color:#F8C303;
+    font-size: 70px;
+    position: absolute;
+    text-align: center;
+
+}
+
+.botonrentnow {
+    position: relative;
+    text-align: center;
+    top: 60%
+}
+
+
+
+
+
 /*<-----------Fin de CSS para formulario.html---------->*/
 
 
