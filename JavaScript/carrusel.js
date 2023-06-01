@@ -4,20 +4,20 @@ fetch('https://api.npoint.io/e97e10b6bdb13a92ee8d')
     .then(data => {
         const imageGallery = document.getElementById('id_carrusel');
 
-        // Get the "bicycles" property from the JSON
+        // buscar los datos de bicycles dentro del Json
         const bicycles = data.bicycles;
 
-        // Iterate over each bicycle object
+        // buscar cada elemento
         bicycles.forEach(bicycle => {
-            // Get the image URL for each bicycle
+            // buscar la url de cada bici
             const imageUrl = bicycle.image;
 
-            // Create an <img> element for each image
+            // crear las <img> 
             const image = document.createElement('img');
             image.src = imageUrl;
             image.classList.add('imagen-carrusel');
 
-            // Append the image to the gallery container
+            // agregar las imagenes al carrusel
             imageGallery.appendChild(image);
         });
     })
