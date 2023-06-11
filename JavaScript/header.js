@@ -22,7 +22,9 @@ document.write(`
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./index.html#sucursales">Sucursales</a></li>
                 <li><a href="./recorridos.html">Recorridos</a></li>
-                <li><a href="./alquila.html" class="boton-alquila">Alquila Ahora</a></li>
+                <li><button class="button" ><a href="./alquila.html">Alquila Ahora</a></button></li>
             </nav>
         </div>
 `);
+//<li><a href="./alquila.html" class="boton-alquila">Alquila Ahora</a></li>
+//<div class="botonrentnow"><button class="button"><a href="./alquila.html"></a>Alquila Ahora!</button></div>

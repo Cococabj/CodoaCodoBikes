@@ -220,7 +220,8 @@ a {
     .container-inception {
         display: none;
     }
-    .inception-recorridos{
+
+    .inception-recorridos {
         flex-direction: column;
     }
 }
@@ -262,7 +263,8 @@ a {
     .container-inception {
         display: none;
     }
-    .inception-recorridos{
+
+    .inception-recorridos {
         flex-direction: column;
     }
 }
@@ -438,7 +440,8 @@ footer {
     color: #f8c303;
     text-align: center;
 }
-.textabout p{
+
+.textabout p {
     /* color:#13005A;*/
     color: black;
     text-align: center;
@@ -478,7 +481,8 @@ footer {
         background-color: black;
     }
 }
-.h2creadores{
+
+.h2creadores {
     color: #f8c303;
     margin: auto;
 }
@@ -600,6 +604,7 @@ li:hover {
     max-width: 100%;
     white-space: nowrap;
 }
+
 #precioDia {
     font-weight: bold;
     font-size: x-large;
@@ -610,7 +615,7 @@ li:hover {
 .container-inception {
     background-color: #F8C303;
     width: 98%;
-    height: 500px;
+    height: 525px;
     padding: 1%;
     margin: 0 auto;
 }
@@ -627,10 +632,11 @@ li:hover {
 .carrusel-container {
     background-color: white;
     width: 65%;
-    height: 410px;
+    height: 425px;
     padding: 1%;
     margin: 0 auto;
     border-radius: 10%;
+
 }
 
 .texto-carrusel {
@@ -810,7 +816,7 @@ img:nth-child(8) {
     padding: 1%;
     border: black;
     border-width: 4px;
-    border-style:double;
+    border-style: double;
     font-size: 75%;
     font-weight: bold;
     color: black !important;
@@ -833,14 +839,16 @@ img:nth-child(8) {
     height: auto;
 }
 
-.botones-form{
+.botones-form {
     height: auto;
-    margin-left: auto ;
+    margin-left: auto;
 }
-.form{
+
+.form {
     height: auto;
-    margin-left: 28% ;
+    margin-left: 28%;
 }
+
 /* seccion about us en la home (inicio) */
 
 .abouthome {
@@ -867,6 +875,7 @@ img:nth-child(8) {
     background-size: cover;
     height: 350px;
     border-radius: 0% 70% 70% 0%;
+
     @media (max-width: 1035px) {
         width: 100%;
         display: inline-block;
@@ -884,6 +893,7 @@ img:nth-child(8) {
     word-wrap: break-word;
     padding: 5%;
     margin-left: 80px;
+
     @media (max-width: 1035px) {
         width: 100%;
         position: absolute;
@@ -914,13 +924,14 @@ img:nth-child(8) {
     position: absolute;
     inset: 0;
     margin: auto;
-    width: 50px;
+    width: auto;
+    /*50px */
     height: 50px;
     border-radius: inherit;
     scale: 0;
     z-index: -1;
     background-color: #F8C303;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .button:hover::before {
@@ -929,7 +940,8 @@ img:nth-child(8) {
 
 .button:hover {
     color: #212121;
-    scale: 1.1;
+    scale: 1.3;
+    /*1.1 */
     box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
 }
 
@@ -956,7 +968,7 @@ img:nth-child(8) {
     font-size: 70px;
     position: absolute;
     text-align: center;
-
+    
 }
 
 .botonrentnow {
@@ -964,6 +976,20 @@ img:nth-child(8) {
     text-align: center;
     top: 60%
 }
+
+.boxrent {
+    background: rgba(255, 231, 204, 0.5);
+    position: relative;
+    justify-content: center;
+    margin: 2%;
+    left: 28%;
+    width: 39%;
+    flex-flow: row wrap;
+    height: 5%;
+    border-radius: 15px;
+    word-wrap: break-word;
+}
+
 /*<-----------Fin de CSS para formulario.html---------->*/
 /*<-----------inicio de CSS para recorridos.html---------->*/
 .recorridos {
@@ -978,10 +1004,12 @@ img:nth-child(8) {
     font-weight: bold;
     font-size: x-large;
 }
-.recorridos p{
+
+.recorridos p {
     font-weight: bold;
     margin: 15px;
 }
+
 .box-video-recorridos {
     display: flex;
     flex-direction: column;
@@ -989,17 +1017,20 @@ img:nth-child(8) {
     background-color: #F8C303;
     padding: 2%;
 }
-.box-texto-recorridos{
+
+.box-texto-recorridos {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 2%;
-    
+
 }
-.titulo-recorridos{
+
+.titulo-recorridos {
     text-align: center;
 }
-.inception-recorridos{
+
+.inception-recorridos {
     background-color: #F8C303;
     padding: 1%;
 }
