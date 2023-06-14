@@ -1,7 +1,7 @@
 /*<---Inicio CSS para sucursales--->*/
 .sucursales {
     background-color: black;
-    padding: 0.5%;
+    padding: 0%;
     color: white;
 }
 
@@ -80,7 +80,7 @@
 
 .footer-container p {
     display: block;
-    color: black;
+    color: #F8C303;
     margin-top: 1%;
     margin-bottom: 1%;
     padding: 1%;
@@ -100,7 +100,6 @@ h1 {
 #inicio {
     /*aca va el color del div dentro del header*/
     padding: left 100px;
-    ;
     display: flex;
     justify-content: center;
 
@@ -110,8 +109,16 @@ h1 {
     /*aca va el color del div dentro del header*/
     padding: left 100px;
     display: flex;
-    justify-content: center;
-    background-color: #F8C303;
+
+    background-color: black;
+}
+#redes {
+    display: inline;
+
+}
+
+.redes p{
+    color: #F8C303;
 }
 
 .whats-app {
@@ -121,7 +128,7 @@ h1 {
 /*<---Fin CSS para el Footer--->*/
 
 .local p {
-    color: black;
+    color: #F8C303;
     font-size: 80%;
     margin: 0;
     margin-left: 1%;
@@ -548,7 +555,7 @@ li:hover {
 /*<-----------Inicio de CSS para Alquila.html---------->*/
 
 .alquila {
-    padding: 1%;
+    padding: 0%;
     background-color: black;
 }
 
@@ -754,7 +761,7 @@ img:nth-child(8) {
 /*<-----------Inicio boton alquila---------->*/
 .boton-alquila {
     width: 150px;
-    background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-image: linear-gradient(115deg, grey, #fad648, #ffff00, #ffff55, white);
     text-align: center;
     margin: auto;
     margin-top: 5%;
@@ -1032,7 +1039,7 @@ img:nth-child(8) {
 
 .inception-recorridos {
     background-color: #F8C303;
-    padding: 1%;
+    padding: 0%;
 }
 
 /*<-----------Fin de CSS para recorridos.html---------->*/

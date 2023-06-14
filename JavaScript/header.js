@@ -9,13 +9,13 @@ document.write(`
             <nav id="pruebanav">
                 <div class="sandwich">
                     <input type="checkbox" id="menu">
-                    <label for="menu"> ☰ </label>
+                    <label for="menu"> <a><img src="./img/bicicleta.png" alt="Inicio" width="25"></a> </label>
                     <ul>
                         <li><a href="./index.html">Inicio</a></li>
                         <li><a href="./nosotros.html">Nosotros</a></li>
                         <li><a href="./index.html#sucursales">Sucursales</a></li>
                         <li><a href="./recorridos.html">Recorridos</a></li>
-                        <li><a href="./alquila.html" class="boton-alquila">Alquila Ahora</a></li>
+                        <li><a href="./alquila.html" class="botonrentnow"><button class="button">Alquila Ahora</a></li>
                     </ul>
                 </div>
                 <li><a href="./index.html">Inicio</a></li>

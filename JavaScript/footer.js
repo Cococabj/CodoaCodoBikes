@@ -11,7 +11,10 @@ document.write(`
                 <br>
                 </div>
                     <div class="redes">
+                        <div class="redes">
                         <p>Podes seguirnos en:</p>
+                        </div>
+                        <div class="redes">
                         <a href="https://www.instagram.com"><img src="./img/instagram.png" alt="www.instagram.com"
                                 width="25"></a>
                         <a href="https://www.facebook.com"><img src="./img/facebook.png" alt="www.facebook.com"
@@ -20,6 +23,7 @@ document.write(`
                                 width="25"></a>
                         <a href="https://www.youtube.com"><img src="./img/youtube.png" alt="www.youtube.com"
                                 width="25"></a>
+                        </div>
                         <p>Tambien podes encontrarnos en Whats App al 11-1111-1111 <a class="whats-app"
                                     href="https://api.whatsapp.com/send?phone=11-1111-1111"><img src="./img/whatsapp.png" alt="https://api.whatsapp.com/send?phone=11-1111-1111"
                                         width="35"></a></p>
