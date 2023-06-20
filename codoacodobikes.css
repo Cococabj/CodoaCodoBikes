@@ -999,18 +999,7 @@ img:nth-child(8) {
 
 /*<-----------Fin de CSS para formulario.html---------->*/
 /*<-----------inicio de CSS para recorridos.html---------->*/
-.recorridos {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
-    overflow-wrap: break-word;
-    background-color: black;
-    padding: 0%;
-    margin: 0%;
-    text-align: left;
-    font-weight: bold;
-    font-size: x-large;
-}
+
 
 .recorridos p {
     font-weight: bold;
@@ -1037,12 +1026,121 @@ img:nth-child(8) {
     text-align: center;
 }
 
-.inception-recorridos {
-    background-color: #F8C303;
-    padding: 0%;
+
+.card{
+    border-radius: 5px;
+    width: 360px;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    height: 500px;
+    display: inline-block;
 }
 
+.contenedor-en-card{
+    width: 100%;
+}
+
+
+
+.parallax-madero {
+    /* The image used */
+    background-image: url("img/Puerto_Madero.jpg");
+
+    /* Full height */
+    height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parallax-palermo{
+    /* The image used */
+    background-image: url("img/palermo.jpg");
+
+    /* Full height */
+    height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parallax-bajo{
+    /* The image used */
+    background-image: url("img/bajo.jpg");
+
+    /* Full height */
+    height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.parallax-ba{
+    /* The image used */
+    background-image: url("img/recorre-ba.jpg");
+
+    /* Full height */
+    height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.textorecorridos{
+    width: 100%;
+    color:#F8C303;
+    font-size: 70px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+}
+
+.textorecorridos1{
+    width: 100%;
+    color:#F8C303;
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    word-wrap: break-word;
+}
+
+.separadores{
+    height: 100px;
+    background-color: #f8c303
+    
+}
 /*<-----------Fin de CSS para recorridos.html---------->*/
+
+
 
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
 Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
