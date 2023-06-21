@@ -1201,6 +1201,23 @@ h5{
     
 
 }
+
+.banner-rent{
+    width: 100%;
+    background-image: url("./img/recorridos-index.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.banner-rent-tt{
+    position: absolute;
+    left: 70px;
+    margin-top: 60px;
+    color: #F8C303;
+    font-size: 50px;
+    word-wrap: break-word;
+}
 /*<-----------Fin de CSS para recorridos.html---------->*/
 
 
