@@ -154,11 +154,6 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-p {
-    color: white;
-    font-size: 25px;
-}
-
 h1 {
     color: white;
     font-size: 35px;
@@ -622,7 +617,7 @@ li:hover {
 .container-inception {
     background-color: #F8C303;
     width: 98%;
-    height: 525px;
+    height: 650px;
     padding: 1%;
     margin: 0 auto;
 }
@@ -638,19 +633,19 @@ li:hover {
 
 .carrusel-container {
     background-color: white;
-    width: 65%;
-    height: 425px;
+    width: 55%;
+    height: 550px;
     padding: 1%;
     margin: 0 auto;
     border-radius: 10%;
-
 }
 
 .texto-carrusel {
     background-color: white;
     height: 35px;
-    width: 50%;
+    width: 60%;
     margin: auto;
+    margin-top: 120px;
 }
 
 .texto-carrusel p {
@@ -714,7 +709,7 @@ li:hover {
 .carrusel {
     position: relative;
     width: 350px;
-    height: 350px;
+    height: 450px;
     margin-top: 1%
 }
 
@@ -726,31 +721,68 @@ li:hover {
     animation: display 32s infinite;
 }
 
-img:nth-child(2) {
-    animation-delay: 4s;
+.carrusel>p {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    opacity: 1;
+    animation: display 32s infinite;
+    text-align: center;
 }
 
 img:nth-child(3) {
-    animation-delay: 8s;
+    animation-delay: 4s;
 }
 
-img:nth-child(4) {
-    animation-delay: 12s;
+p:nth-child(4) {
+    animation-delay: 4s;
 }
 
 img:nth-child(5) {
-    animation-delay: 16s;
+    animation-delay: 8s;
 }
 
-img:nth-child(6) {
-    animation-delay: 20s;
+p:nth-child(6) {
+    animation-delay: 8s;
 }
 
 img:nth-child(7) {
+    animation-delay: 12s;
+}
+
+p:nth-child(8) {
+    animation-delay: 12s;
+}
+
+img:nth-child(9) {
+    animation-delay: 16s;
+}
+
+p:nth-child(10) {
+    animation-delay: 16s;
+}
+
+img:nth-child(11) {
+    animation-delay: 20s;
+}
+
+p:nth-child(12) {
+    animation-delay: 20s;
+}
+
+img:nth-child(13) {
     animation-delay: 24s;
 }
 
-img:nth-child(8) {
+p:nth-child(14) {
+    animation-delay: 24s;
+}
+
+img:nth-child(15) {
+    animation-delay: 28s;
+}
+
+p:nth-child(16) {
     animation-delay: 28s;
 }
 
