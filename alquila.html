@@ -35,7 +35,9 @@
                 <div id="app-bici">
                     <!-- Agregar un carrouel con los modelos posibles -->
                     <div class="container-inception">
-                        <p>La mejor seleccion de bicis para conocer Buenos Aires!</p>
+                        <div class="titulo-carrusel">
+                            <p>La mayor variedad en Bicicletas de alquiler de Buenos Aires</p>
+                        </div>
                         <div class="carrusel-container">
                             <div class="carrusel" id="id_carrusel"></div>
                             <div class="texto-carrusel">
@@ -61,7 +63,11 @@
                                 <td><img :src="elemento.image" :alt="elemento.type"></td>
                                 <td>{{elemento.comment}}</td>
                                 <td id="precioDia">{{elemento.precio}}</td>
-                                <td style="width: 100px !important;"><a href="./formulario.html" class="botonrentnow"><button class="button">Alquila ahora!</button></a></td>
+                                <td style="width: 100px !important;">
+                                    <a href="./formulario.html" class="botonrentnow">
+                                        <button class="button2">Alquila ahora!</button>
+                                    </a>
+                                </td>
                             </tr>
                         </table>
                 </div>

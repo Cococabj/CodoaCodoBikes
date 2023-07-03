@@ -595,7 +595,7 @@ li:hover {
 }
 
 .alquila img:hover {
-    transform: scale(3.5);
+    transform: scale(2.7);
 }
 
 #tabla-dolar th {
@@ -614,28 +614,72 @@ li:hover {
     padding: 10px;
 }
 
+.button2 {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #F8C303;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+
+.button2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    /*50px */
+    height: 61px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #F8C303;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button2:hover::before {
+    scale: 1;
+}
+
+.button2:hover {
+    color: #212121;
+    scale: 1;
+    /*1.1 */
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button2:active {
+    scale: 1;
+}
+
+
 /*<-----------Inicio carrousel---------->*/
 .container-inception {
     background-color: #F8C303;
     width: 98%;
-    height: 650px;
+    height: 620px;
     padding: 1%;
     margin: 0 auto;
 }
-
-.container-inception p {
+.titulo-carrusel p {
     color: black;
     text-align: center;
-    font-weight: bolder;
-    font-size: xx-large;
-    height: 50px;
-    margin: 10px;
+    font-weight: bold;
+    font-size:xx-large;
+    margin: 1%;
 }
 
 .carrusel-container {
     background-color: white;
     width: 55%;
-    height: 550px;
+    height: 520px;
     padding: 1%;
     margin: 0 auto;
     border-radius: 10%;
@@ -644,19 +688,20 @@ li:hover {
 .texto-carrusel {
     background-color: white;
     height: 35px;
-    width: 60%;
+    width: 90%;
     margin: auto;
-    margin-top: 120px;
+    border-radius: 5%;
+    margin-top: 5px;
 }
 
 .texto-carrusel p {
     color: black;
     text-align: center;
     font-weight: bold;
-    font-size: x-large;
+    font-size:x-large;
 }
 
-.texto-carrusel a {
+.boton-carrusel a {
     color: black;
     text-align: center;
     font-weight: bold;
@@ -673,20 +718,20 @@ li:hover {
     height: 200px;
 }
 
-@keyframes display {
+@keyframes display{
     0% {
-        transform: translateX(150px);
-        opacity: 0;
+        transform: translateX(120px);
+        opacity: 0.1
     }
 
     10% {
-        transform: translateX(100px);
+        transform: translateX(60px);
         opacity: 1;
     }
 
     20% {
         transform: translateX(0);
-        opacity: 0.01;
+        opacity: 0;
     }
 
     30% {
@@ -697,7 +742,11 @@ li:hover {
     100% {
         transform: translateX(-100px);
         opacity: 0;
+        visibility: hidden;
     }
+}
+.carrusel-container a{
+    margin-bottom: 50px;
 }
 
 .imagen-carrusel {
@@ -709,7 +758,7 @@ li:hover {
 
 .carrusel {
     position: relative;
-    width: 350px;
+    width: 300px;
     height: 450px;
     margin-top: 1%
 }
@@ -719,72 +768,75 @@ li:hover {
     top: 0;
     left: calc(50% - 100px);
     opacity: 0;
-    animation: display 32s infinite;
+    animation: display 21s infinite;
 }
 
 .carrusel>p {
+    visibility: hidden;
     position: absolute;
-    bottom: 0;
-    left: calc(50% - 100px);
+    bottom: 10px;
+    width: auto;
     opacity: 1;
-    animation: display 32s infinite;
-    text-align: center;
+    animation: display 21s infinite;
+    display: inline;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 img:nth-child(3) {
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 p:nth-child(4) {
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 img:nth-child(5) {
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 
 p:nth-child(6) {
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 
 img:nth-child(7) {
-    animation-delay: 12s;
+    animation-delay: 9s;
 }
 
 p:nth-child(8) {
-    animation-delay: 12s;
+    animation-delay: 9s;
 }
 
 img:nth-child(9) {
-    animation-delay: 16s;
+    animation-delay: 12s;
 }
 
 p:nth-child(10) {
-    animation-delay: 16s;
+    animation-delay: 12s;
 }
 
 img:nth-child(11) {
-    animation-delay: 20s;
+    animation-delay: 15s;
 }
 
 p:nth-child(12) {
-    animation-delay: 20s;
+    animation-delay: 15s;
 }
 
 img:nth-child(13) {
-    animation-delay: 24s;
+    animation-delay: 18s;
 }
 
 p:nth-child(14) {
-    animation-delay: 24s;
+    animation-delay: 18s;
 }
 
 img:nth-child(15) {
-    animation-delay: 28s;
+    animation-delay: 21s;
 }
 
 p:nth-child(16) {
-    animation-delay: 28s;
+    animation-delay: 21s;
 }
 
 /*<-----------Fin carrousel---------->*/
