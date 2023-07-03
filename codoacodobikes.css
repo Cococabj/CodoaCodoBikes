@@ -594,7 +594,7 @@ li:hover {
 }
 
 .alquila img:hover {
-    transform: scale(3.5);
+    transform: scale(2.7);
 }
 
 #tabla-dolar th {
@@ -613,11 +613,57 @@ li:hover {
     padding: 10px;
 }
 
+.button2 {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #F8C303;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+
+.button2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    /*50px */
+    height: 61px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #F8C303;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button2:hover::before {
+    scale: 1;
+}
+
+.button2:hover {
+    color: #212121;
+    scale: 1;
+    /*1.1 */
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button2:active {
+    scale: 1;
+}
+
+
 /*<-----------Inicio carrousel---------->*/
 .container-inception {
     background-color: #F8C303;
     width: 98%;
-    height: 650px;
+    height: 620px;
     padding: 1%;
     margin: 0 auto;
 }
@@ -632,7 +678,7 @@ li:hover {
 .carrusel-container {
     background-color: white;
     width: 55%;
-    height: 550px;
+    height: 520px;
     padding: 1%;
     margin: 0 auto;
     border-radius: 10%;
@@ -641,10 +687,10 @@ li:hover {
 .texto-carrusel {
     background-color: white;
     height: 35px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     border-radius: 5%;
-    margin-top: 40px;
+    margin-top: 5px;
 }
 
 .texto-carrusel p {
@@ -654,7 +700,7 @@ li:hover {
     font-size:x-large;
 }
 
-.texto-carrusel a {
+.boton-carrusel a {
     color: black;
     text-align: center;
     font-weight: bold;
@@ -725,6 +771,7 @@ li:hover {
 }
 
 .carrusel>p {
+    visibility: hidden;
     position: absolute;
     bottom: 10px;
     width: auto;

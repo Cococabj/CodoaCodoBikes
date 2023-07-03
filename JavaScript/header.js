@@ -22,6 +22,7 @@ document.write(`
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./index.html#sucursales">Sucursales</a></li>
                 <li><a href="./recorridos.html">Recorridos</a></li>
+                <li><a href="./productos.html">CRUM prueba</a></li>
                 <li><button class="button" ><a href="./alquila.html">Alquila Ahora</a></button></li>
             </nav>
         </div>
