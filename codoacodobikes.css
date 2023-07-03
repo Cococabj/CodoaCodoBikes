@@ -112,12 +112,13 @@ h1 {
 
     background-color: black;
 }
+
 #redes {
     display: inline;
 
 }
 
-.redes p{
+.redes p {
     color: #F8C303;
 }
 
@@ -1003,11 +1004,11 @@ p:nth-child(16) {
 
 .textorent {
     width: 100%;
-    color:#F8C303;
+    color: #F8C303;
     font-size: 70px;
     position: absolute;
     text-align: center;
-    
+
 }
 
 .botonrentnow {
@@ -1059,20 +1060,20 @@ p:nth-child(16) {
 }
 
 
-.card{
+.card {
     border-radius: 5px;
     width: 360px;
     text-align: center;
     background-color: #fff;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     height: 500px;
     display: inline-block;
-    
+
 }
 
-.contenedor-en-card{
+.contenedor-en-card {
     width: 100%;
-    
+
 }
 
 
@@ -1102,11 +1103,11 @@ p:nth-child(16) {
         text-align: center;
         height: 1800px;
         justify-content: space-evenly;
-        
+
     }
 }
 
-.parallax-palermo{
+.parallax-palermo {
     /* The image used */
     background-image: url("img/palermo.jpg");
 
@@ -1131,13 +1132,13 @@ p:nth-child(16) {
         text-align: center;
         height: 1800px;
         justify-content: space-evenly;
-        
+
     }
 
 
 }
 
-.parallax-bajo{
+.parallax-bajo {
     /* The image used */
     background-image: url("img/bajo.jpg");
 
@@ -1162,11 +1163,11 @@ p:nth-child(16) {
         text-align: center;
         height: 1800px;
         justify-content: space-evenly;
-        
+
     }
 }
 
-.parallax-ba{
+.parallax-ba {
     /* The image used */
     background-image: url("img/recorre-ba.jpg");
 
@@ -1186,23 +1187,23 @@ p:nth-child(16) {
         text-align: center;
         position: relative;
         justify-content: baseline;
-        
+
     }
 
 }
 
-.textorecorridos{
+.textorecorridos {
     width: 100%;
-    color:#F8C303;
+    color: #F8C303;
     font-size: 70px;
     position: absolute;
     text-align: center;
     top: 40%;
 }
 
-.textorecorridos1{
+.textorecorridos1 {
     width: 100%;
-    color:#F8C303;
+    color: #F8C303;
     font-size: 40px;
     position: absolute;
     text-align: center;
@@ -1210,16 +1211,13 @@ p:nth-child(16) {
     word-wrap: break-word;
 }
 
-.separadores{
+.separadores {
     text-align: center;
     height: 100px;
     background-color: #f8c303
-
-    
-    
 }
 
-h5{
+h5 {
     color: #000;
 }
 
@@ -1230,19 +1228,20 @@ h5{
     overflow: hidden;
     top: 10px;
 
-    
+
 
 }
 
-.banner-rent{
+.banner-rent {
     width: 100%;
     background-image: url("./img/recorridos-index.jpg");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
-.banner-rent-tt{
+
+.banner-rent-tt {
     position: absolute;
     left: 70px;
     margin-top: 60px;
@@ -1250,10 +1249,71 @@ h5{
     font-size: 50px;
     word-wrap: break-word;
 }
+
 /*<-----------Fin de CSS para recorridos.html---------->*/
 
+/*<-----------inicio de CSS para crud.html---------->*/
+
+.crud-fondo {
+    background-image: url("./img/rentnow1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tabla-crud {
+    height: 800px;
+    width: auto;
+
+}
+
+#crud {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #F8C303;
+    color: white;
+    width: 350px;
+
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<-----------Fin de CSS para crud.html---------->*/
 
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
 Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
