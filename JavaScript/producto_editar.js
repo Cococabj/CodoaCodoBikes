@@ -21,13 +21,13 @@ const { createApp } = Vue
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)
-                    this.id=data.id
+                    this.id=data.id;
                     this.type = data.type;
-                    this.total_length_cm=data.total_length_cm
-                    this.wheel_size_inches=data.wheel_size_inches
-                    this.comment=data.comment
-                    this.image=data.image
-                    this.precio=data.precio                    
+                    this.total_length_cm=data.total_length_cm;
+                    this.wheel_size_inches=data.wheel_size_inches;
+                    this.comment=data.comment;
+                    this.image=data.image;
+                    this.precio=data.precio;
                 })
                 .catch(err => {
                     console.error(err);
