@@ -1307,9 +1307,12 @@ h5 {
 /*<-----------inicio de CSS para crud.html---------->*/
 
 .crud-fondo {
-    background-image: url("./img/rentnow1.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("./img/pattern_prod.jpg");
+    background-repeat: repeat;
+    background-size: ;
+    height: 800px;
+    
+    
 }
 
 .tabla-crud {
@@ -1328,29 +1331,30 @@ h5 {
 
 }
 
-#customers {
+#continer {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
   
-  #customers td, #customers th {
+  #continer td, #continer th {
     border: 1px solid #ddd;
     padding: 8px;
   }
   
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  #continer tr:nth-child(even){background-color: #f2f2f2;}
   
   #customers tr:hover {background-color: #ddd;}
   
-  #customers th {
+  #continer th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: #212121;
     color: white;
   }
 
+  
 
 
 
