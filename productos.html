@@ -15,11 +15,11 @@
         <script src="./JavaScript/header.js"></script>
     </header>
     <main>
+        
         <section class="crud-fondo">
             <div id="app" class="container">
-                <h1>Productos</h1>
-                <br>
-                <div class="botonrentnow"><button class="button"><a href="./producto_nuevo.html"></a>Nuevo</button></div>
+                
+                <div class="botonnew"><button class="bnew"><a href="./producto_nuevo.html"></a>Nuevo Art</button></div>
                 <!--<a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>-->
                 <br><br>
                 <div v-if="error">
@@ -57,10 +57,12 @@
                                         </td>
                                         <td>{{producto.precio}}</td>
                                         <td>
-                                            <a class="btn btn-primary"
+                                            <div class="botoneditar"><a class="beditar"
                                                 :href="'producto_update.html?id='+ producto.id">Editar</a>
-                                            <button type="button" class="btn btn-danger"
+                                            </div>    
+                                            <div class="botondelete"><button type="button" class="bdelete"
                                                 v-on:click="eliminar(producto.id)">Eliminar</button>
+                                            </div>    
                                         </td>
                                     </tr>
                                 </tbody>
@@ -71,9 +73,7 @@
             </div>
         </section>    
     </main>
-    <footer>
-        <script src="./JavaScript/footer.js"></script>
-    </footer>
+    
     <script <!--Link de Bootstrap-->
         src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity = "sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin = "anonymous" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
@@ -82,6 +82,10 @@
     <script src="./JavaScript/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
     <script src="./JavaScript/productos.js"></script>
+
+    <!-- #region<footer>
+        <script src="./JavaScript/footer.js"></script>
+    </footer>-->
 </body>
 
 </html>

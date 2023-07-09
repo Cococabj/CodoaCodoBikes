@@ -1307,10 +1307,13 @@ h5 {
 /*<-----------inicio de CSS para crud.html---------->*/
 
 .crud-fondo {
-    background-image: url("./img/pattern_prod.jpg");
+    background-image: url("./img/bike_pattern.jpg");*/
     background-repeat: repeat;
-    background-size: ;
-    height: 800px;
+    background-size: auto;
+    height: auto;
+    width: 100%;
+    
+    
     
     
 }
@@ -1334,7 +1337,7 @@ h5 {
 #continer {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: auto;
   }
   
   #continer td, #continer th {
@@ -1354,14 +1357,177 @@ h5 {
     color: white;
   }
 
+  .table-responsive{
+    width: 110%;
+  }
   
 
+  .botoneditar {
+    position: relative;
+    text-align: center;
+    top: 60%
+}
+
+.beditar {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #F8C303;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+
+.beditar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    /*50px */
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #F8C303;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.beditar:hover::before {
+    scale: 3;
+}
+
+.beditar:hover {
+    color: #212121;
+    scale: 1.3;
+    /*1.1 */
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.beditar:active {
+    scale: 1;
+}
+
+btn btn-primary
+
+.botondelete{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #F8C303;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+
+.bdelete {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #F8C303;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+
+.bdelete::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    /*50px */
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #F8C303;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.bdelete:hover::before {
+    scale: 3;
+}
+
+.bdelete:hover {
+    color: #212121;
+    scale: 1.3;
+    /*1.1 */
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.bdelete:active {
+    scale: 1;
+}
 
 
+.botonnew{
+    position: relative;
+    text-align: center;
+    top: 60%
+    
+    
+}
 
+.bnew {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #F8C303;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
 
+}
 
+.new::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    /*50px */
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #F8C303;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
 
+.bnew:hover::before {
+    scale: 3;
+}
+
+.bnew:hover {
+    color: #212121;
+    scale: 1.3;
+    /*1.1 */
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.bnew:active {
+    scale: 1;
+}
 
 
 
