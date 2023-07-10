@@ -22,9 +22,9 @@
   </header>
   <main>
     <section class="crud-fondo">
-      <div class="container" id="app">
-        <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-          <h1>Alta de Producto</h1>
+      <div class="container1" id="app">
+        <form style=";margin:10px auto ; width: 400px; padding: 20px;">
+          <div class="alta"><h1>Alta de Producto</h1></div>
           <div class="mb-3">
             <label for="type">type</label>
             <input type="text" name="type" id="type" v-model="type">
@@ -50,7 +50,7 @@
             <label for="precio">precio</label>
             <input type="number" name="precio" id="precio" v-model="precio">
           </div>
-          <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
+          <div class="botonnew"><button type="button" class="bnew" v-on:click="grabar()">Grabar</button></div>
         </form>
       </div>
     </section> 
