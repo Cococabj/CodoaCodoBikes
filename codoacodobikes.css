@@ -1543,6 +1543,21 @@ btn btn-primary
     background-color: white;
 }
 
+.container1 {
+    background-color: transparent;
+    width: 100%;
+
+}
+
+.alta{
+    background-color: #f8c303;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    border-radius: 15px;
+
+}
+
 
 
 
