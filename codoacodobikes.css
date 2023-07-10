@@ -112,12 +112,13 @@ h1 {
 
     background-color:blue;
 }
+
 #redes {
     display: inline;
 
 }
 
-.redes p{
+.redes p {
     color: #F8C303;
 }
 
@@ -1055,11 +1056,11 @@ p:nth-child(16) {
 
 .textorent {
     width: 100%;
-    color:#F8C303;
+    color: #F8C303;
     font-size: 70px;
     position: absolute;
     text-align: center;
-    
+
 }
 
 .botonrentnow {
@@ -1111,20 +1112,20 @@ p:nth-child(16) {
 }
 
 
-.card{
+.card {
     border-radius: 5px;
     width: 360px;
     text-align: center;
     background-color: #fff;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     height: 500px;
     display: inline-block;
-    
+
 }
 
-.contenedor-en-card{
+.contenedor-en-card {
     width: 100%;
-    
+
 }
 
 
@@ -1154,11 +1155,11 @@ p:nth-child(16) {
         text-align: center;
         height: 1800px;
         justify-content: space-evenly;
-        
+
     }
 }
 
-.parallax-palermo{
+.parallax-palermo {
     /* The image used */
     background-image: url("img/palermo.jpg");
 
@@ -1183,13 +1184,13 @@ p:nth-child(16) {
         text-align: center;
         height: 1800px;
         justify-content: space-evenly;
-        
+
     }
 
 
 }
 
-.parallax-bajo{
+.parallax-bajo {
     /* The image used */
     background-image: url("img/bajo.jpg");
 
@@ -1214,11 +1215,11 @@ p:nth-child(16) {
         text-align: center;
         height: 1800px;
         justify-content: space-evenly;
-        
+
     }
 }
 
-.parallax-ba{
+.parallax-ba {
     /* The image used */
     background-image: url("img/recorre-ba.jpg");
 
@@ -1238,23 +1239,23 @@ p:nth-child(16) {
         text-align: center;
         position: relative;
         justify-content: baseline;
-        
+
     }
 
 }
 
-.textorecorridos{
+.textorecorridos {
     width: 100%;
-    color:#F8C303;
+    color: #F8C303;
     font-size: 70px;
     position: absolute;
     text-align: center;
     top: 40%;
 }
 
-.textorecorridos1{
+.textorecorridos1 {
     width: 100%;
-    color:#F8C303;
+    color: #F8C303;
     font-size: 40px;
     position: absolute;
     text-align: center;
@@ -1262,16 +1263,13 @@ p:nth-child(16) {
     word-wrap: break-word;
 }
 
-.separadores{
+.separadores {
     text-align: center;
     height: 100px;
     background-color: #f8c303
-
-    
-    
 }
 
-h5{
+h5 {
     color: #000;
 }
 
@@ -1282,19 +1280,20 @@ h5{
     overflow: hidden;
     top: 10px;
 
-    
+
 
 }
 
-.banner-rent{
+.banner-rent {
     width: 100%;
     background-image: url("./img/recorridos-index.jpg");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
-.banner-rent-tt{
+
+.banner-rent-tt {
     position: absolute;
     left: 70px;
     margin-top: 60px;
@@ -1302,10 +1301,255 @@ h5{
     font-size: 50px;
     word-wrap: break-word;
 }
+
 /*<-----------Fin de CSS para recorridos.html---------->*/
 
+/*<-----------inicio de CSS para crud.html---------->*/
+
+.crud-fondo {
+    background-image: url("./img/bike_pattern.jpg");*/
+    background-repeat: repeat;
+    background-size: auto;
+    height: auto;
+    width: 100%;
+    
+    
+    
+    
+}
+
+.tabla-crud {
+    height: 800px;
+    width: auto;
+
+}
+
+#crud {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #F8C303;
+    color: white;
+    width: 350px;
+
+}
+
+#continer {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: auto;
+  }
+  
+  #continer td, #continer th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #continer tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #continer th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #212121;
+    color: white;
+  }
+
+  .table-responsive{
+    width: 110%;
+  }
+  
 
 
+.botoneditar{
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    
+
+}
+
+.beditar {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: black;
+    border: 2px solid #292bcf;
+    border-radius: 34px;
+    background-color:white;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+
+.beditar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    /*50px */
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #141496; /*color hover*/
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.beditar:hover::before {
+    scale: 3;
+}
+
+.beditar:hover {
+    color: rgb(31, 226, 73);
+    scale: 1.3;
+    /*1.1 */
+    box-shadow: 0 0px 20px rgba(108, 98, 193, 0.4);
+}
+
+.beditar:active {
+    scale: 1;
+}
+
+btn btn-primary
+
+.botondelet{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #000;
+    border: 2px solid #f32f2f;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+.botondelete{
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+
+}
+
+.bdelete {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #f32f2f;
+    border: 2px solid rgb(228, 19, 19);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    
+
+}
+
+.bdelete::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    /*50px */
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #8f0707;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.bdelete:hover::before {
+    scale: 3;
+}
+
+.bdelete:hover {
+    color: #f32f2f;
+    scale: 1.3;
+    /*1.1 */
+    box-shadow: 0 0px 20px rgba(182, 53, 14, 0.4);
+}
+
+.bdelete:active {
+    scale: 1;
+}
+
+
+.botonnew{
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    
+    
+}
+
+.bnew {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: black; /*color letra del botn sin hover*/
+    border: 2px solid #696bda;
+    border-radius: 34px;
+    background-color: white;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+
+}
+
+.bnew::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    /*50px */
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #45CFDD;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.bnew:hover::before {
+    scale: 3;
+}
+
+.bnew:hover {
+    color: #2f32f3; /*color texto hover*/
+    scale: 1.3;
+    /*1.1 */
+    box-shadow: 0 0px 20px rgba(98, 100, 193, 0.4);
+}
+
+.bnew:active {
+    scale: 1;
+}
+
+.trr{
+    background-color: white;
+}
+
+
+
+
+
+
+
+/*<-----------Fin de CSS para crud.html---------->*/
 
 /*  what problem your offering solves  | Cite examples of whom you’ve served |
 Explain what you’re offering them |Establish a mission statement resolver problema de movilidad
