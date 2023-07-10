@@ -1,17 +1,17 @@
 // Fetch JSON data
-fetch('https://api.npoint.io/e97e10b6bdb13a92ee8d')
+fetch('https://cococabj.pythonanywhere.com/productos')
     .then(response => response.json())
     .then(data => {
         const imageGallery = document.getElementById('id_carrusel');
 
         // buscar los datos de bicycles dentro del Json
-        const bicycles = data.bicycles;
+        //const data = data;
 
         // buscar cada elemento
-        bicycles.forEach(bicycle => {
+        data.forEach(data => {
             // buscar la url de cada bici
-            const imageUrl = bicycle.image;
-            const imagetype = bicycle.type;
+            const imageUrl = data.image;
+            const imagetype = data.type;
 
             // crear las <img> 
             const image = document.createElement('img');
