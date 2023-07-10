@@ -15,10 +15,8 @@
         <script src="./JavaScript/header.js"></script>
     </header>
     <main>
-
         <section class="crud-fondo">
             <div id="app" class="container">
-
                 <div class="botonnew"><button class="bnew"><a href="./producto_nuevo.html"></a>Nuevo Art</button></div>
                 <!--<a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>-->
                 <br><br>
@@ -57,7 +55,6 @@
                                         </td>
                                         <td>{{producto.precio}}</td>
                                         <td>
-                                            
                                             <div class="botoneditar">
                                                 <button class="beditar">
                                                     <a :href="'producto_update.html?id='+ producto.id">Editar</a>
@@ -76,16 +73,15 @@
             </div>
         </section>
     </main>
-
-    <script <!--Link de Bootstrap-->
-        src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity = "sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin = "anonymous" ></script>
+    <script>
+        src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity = "sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin = "anonymous"
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
     <script src="./JavaScript/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
     <script src="./JavaScript/productos.js"></script>
-
     <footer>
         <script src="./JavaScript/footer.js"></script>
     </footer>
