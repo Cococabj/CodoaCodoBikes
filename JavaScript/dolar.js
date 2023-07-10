@@ -19,7 +19,10 @@ createApp({
           const dolarBlue = data.blue.value_sell  // guarda los valores de venta del JSON 
           const euroBlue = data.blue_euro.value_sell  // guarda los valores de venta del JSON 
           
-          // Crear tabla de valores de monedas "Blue" 
+          // Crear tabla de valores de monedas "Blue"
+
+
+          /*
           const table = `
       <table border="1">
         <tr>
@@ -39,8 +42,10 @@ createApp({
           document.getElementById("app-blue").innerHTML = table;
           // inserta la tabla en alquila.html
           console.log(dolarBlue, euroBlue)
+          */
         })
         .catch(error => alert("Ups... se produjo un error: " + error))
+        
     },
   },
   created() {

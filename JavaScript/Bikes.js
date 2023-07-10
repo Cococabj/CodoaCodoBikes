@@ -4,7 +4,7 @@ createApp({
     data() {
       return {
         bicycles:[],
-        url: "https://api.npoint.io/e97e10b6bdb13a92ee8d",
+        url: "https://cococabj.pythonanywhere.com/productos",
       }
     },
     methods: {
@@ -13,7 +13,7 @@ createApp({
            .then(response => response.json()) 
            .then(data => {
              console.log(data)
-             this.bicycles=data.bicycles
+             this.bicycles=data
            })
            .catch(error=>alert("Ups... se produjo un error: "+ error))
        },
