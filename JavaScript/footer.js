@@ -34,6 +34,7 @@ document.write(`
                         <a href="https://www.w3schools.com/w3css/default.asp"><img src="./img/css.png" alt="CSS"
                                 width="25"></a>
                         <a href="https://www.w3schools.com/js/"><img src="./img/js.png" alt="JavaScript" width="25"></a>
+                        <a href="https://www.w3schools.com/python/"><img src="./img/python.png" alt="Python" width="25"></a>
                     </div>
                     <div class="creacion">
                         <p>Creado por:</p>

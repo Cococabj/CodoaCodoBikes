@@ -23,31 +23,31 @@
   <main>
     <section class="crud-fondo">
       <div class="container1" id="app">
-        <form style="margin:10px auto ; width: 400px; padding: 20px;">
+        <form class="crum_producto">
           <div class="alta"><h1>Alta de Producto</h1></div>
           <div class="mb-3">
-            <label for="type">Nombre</label>
+            <label for="type">Nombre:</label>
             <input type="text" name="type" id="type" v-model="type">
           </div>
           <div class="mb-3">
-            <label for="total_length_cm">Largo</label>
+            <label for="total_length_cm">Largo:</label>
             <input type="text" name="total_length_cm" id="total_length_cm" v-model="total_length_cm">
           </div>
           <div class="mb-3">
-            <label for="wheel_size_inches">Tamaño de rueda</label>
+            <label for="wheel_size_inches">Tamaño de rueda:</label>
             <input type="text" name="wheel_size_inches" id="wheel_size_inches" v-model="wheel_size_inches">
           </div>
           <div class="mb-3">
-            <label for="comment">Comentarios</label>
+            <label for="comment">Comentarios:</label>
             <input type="text" name="comment" id="comment" v-model="comment">
           </div>
           <div class="mb-3">
-            <label for="image">Imagen</label>
+            <label for="image">Imagen:</label>
             <input type="text" name="image" id="image" v-model="image">
             <img width="100" :src="image" alt="">
           </div>
           <div class="mb-3">
-            <label for="precio">precio</label>
+            <label for="precio">Precio:</label>
             <input type="number" name="precio" id="precio" v-model="precio">
           </div>
           <div class="botonnew"><button type="button" class="bnew" v-on:click="grabar()">Grabar</button></div>
