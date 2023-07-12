@@ -1,7 +1,7 @@
 document.write(`
         <div id="inicio">
             <a href="#inicio"><img src="./img/bicicleta.png" alt="Inicio" width="150"></a>
-            <h1>Codo a Codo Bikes</h1>
+            <h1 class="titulo">Codo a Codo Bikes</h1>
             <a href="#inicio"><img src="./img/bicicleta.png" alt="Inicio" width="150"></a>
         </div>
 

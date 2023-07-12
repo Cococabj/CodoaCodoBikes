@@ -132,7 +132,6 @@ p {
 h1 {
     color: white;
     font-size: 35px;
-
 }
 
 #inicio {
@@ -140,8 +139,13 @@ h1 {
     padding: left 100px;
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
+
+#inicio h1{
+    justify-content: center;
+}
+
 
 .footer p {
     color: black;
@@ -208,6 +212,10 @@ a {
         width: 100%;
         display: inline-block;
         background-color: black;
+    }
+    
+    #inicio img{
+        width: 75px;
     }
 
     .sandwich {
