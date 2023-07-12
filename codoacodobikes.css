@@ -99,6 +99,10 @@
     height: auto;
 }
 
+.local a{
+    font-family: 'Roboto', sans-serif;
+}
+
 .redes{
     width: auto;
     margin: 0.3%;
@@ -238,6 +242,15 @@ a {
 
     .inception-recorridos {
         flex-direction: column;
+    }
+
+    .th-hidden{
+        display: none;
+    }
+
+    .form{
+            height: auto;
+            margin-left: 1%;
     }
 }
 
@@ -953,7 +966,7 @@ p:nth-child(16) {
 
 .form {
     height: auto;
-    margin-left: 28%;
+    margin-left: 5%;
 }
 
 /* seccion about us en la home (inicio) */
@@ -967,11 +980,13 @@ p:nth-child(16) {
     width: 100%;
     overflow: hidden;
 
+    
 
     @media (max-width: 1035px) {
         width: 100%;
         display: inline-block;
         justify-content: center;
+    
     }
 }
 
@@ -1007,6 +1022,8 @@ p:nth-child(16) {
         top: 50px;
         left: 5px;
         justify-content: center;
+        margin: 0%;
+        padding: 0%;
     }
 
 }
