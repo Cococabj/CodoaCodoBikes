@@ -66,26 +66,58 @@
 /*<---Fin CSS para sucursales--->*/
 
 /*<---Inicio CSS para el Footer--->*/
-.whats-app {
-    text-align: right;
-}
 
 .footer-container {
     font-weight: bold;
+    background-color: #F8C303;
+}
+
+.footer-flex{
     flex-direction:column;
-    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-direction: row;
 }
 
 .footer-container a {
     padding-left: 1%;
+    
 }
 
 .footer-container p {
     display: block;
     color: black;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 1%;
+    margin: 0.3%;
+    padding: 0.3%;
+}
+
+.local{
+    text-align: center;
+    margin: 0.3%;
+    padding: 0.3%;
+    height: auto;
+}
+
+.redes{
+    width: auto;
+    margin: 0.3%;
+    padding: 0.3%;
+}
+.desarrollo{
+    width: auto;
+    margin: 0.3%;
+    padding: 0.3%;
+}
+
+.desarrolo #child{
+    display: inline;
+}
+
+.creacion{
+    text-align: center;
+    margin: 0.3%;
+    padding: 0.3%;
 }
 
 p {
@@ -107,27 +139,7 @@ h1 {
 
 }
 
-#footer {
-    /*aca va el color del div dentro del header*/
-    padding: left 100px;
-    display: flex;
-    background-color: #F8C303;
-}
-
-#redes {
-    display: inline;
-
-}
-
-.redes p {
-    color: black;
-}
-
-.whats-app {
-    display: inline;
-}
-
-.local p {
+.footer p {
     color: black;
     font-size: 80%;
     margin: 0;
@@ -140,11 +152,11 @@ h1 {
     text-underline-position: under;
 }
 
-.local a:visited {
+.footer a:visited {
     color: white;
 }
 
-.local a {
+.footer a {
     color: black;
     font-size: 80%;
     padding: 0%;
@@ -294,7 +306,7 @@ a {
     }
 
     .ubicacion {
-        font-size: 100%;
+        font-size: 80%;
     }
 
     .redes p {
@@ -509,11 +521,11 @@ footer {
     display: inline-block;
     border: 1px solid white;
     border-radius: 5px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     line-height: 30px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     user-select: none;
     margin-top: 1px;
 }
@@ -521,6 +533,7 @@ footer {
 /* Estilo del boton cuando se pasa el mouse por encima*/
 .sandwich label:hover {
     background: black;
+    cursor: pointer;
 }
 
 /* Estilo del boton cuando el menú está expandido*/
