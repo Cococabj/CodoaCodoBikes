@@ -215,7 +215,11 @@ a {
     }
     
     #inicio img{
-        width: 75px;
+        width: 65px;
+    }
+
+    #inicio h1{
+        font-size: large;
     }
 
     .sandwich {
